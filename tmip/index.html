@@ -1,0 +1,787 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>This Month in Psychopharmacology</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.neiglobal.com/content/include/css/style.css" type="text/css" media="all" rel="stylesheet"/>
+	<script src="https://kit.fontawesome.com/4e837a30ce.js" crossorigin="anonymous"></script>
+    <style>
+
+	.nei-body h1, .nei-body h2, .nei-body h3, .nei-body h4, .nei-body p, .nei-body ul, .nei-body ol, .nei-body a, .nei-body span, .nei-body mark, .nei-body th, .nei-body td, .nei-body tr, .nei-body thead, .nei-body label  {
+		font-family: 'Avenir', 'Nunito Sans', Arial, Helvetica, sans-serif;
+		color: #3D474D;
+		line-height: normal;
+		box-sizing: border-box;
+	}
+        .nei-body .tmip--header {
+        
+			padding: 40px;
+			
+            display: flex;
+            background: rgb(242,140,19);
+            background: linear-gradient(160deg, rgba(242,140,19,1) 0%, rgb(255, 187, 62) 100%);
+            align-items: center;
+            justify-content: center;
+		}
+         .nei-body .tmip--header h1 {
+            color: #fff;
+            text-align: left;
+            font-size: 32px;
+            font-weight: bold;
+        }
+		.nei-body .tmip--header img {
+			width: 100px;
+            padding-right: 20px;
+		}
+
+		@media (max-width: 940px) {
+			.nei-body .tmip--header {
+				padding: 20px 5px;
+			}
+
+            .nei-body .tmip--header h1 {
+                font-size: 24px;
+            }
+            .nei-body .tmip--header img {
+                width: 100px;
+                padding: 20px;
+            }
+		}
+        @media (max-width: 300px) {
+			.nei-body .tmip--header {
+				padding: 20px 5px;
+			}
+
+            .nei-body .tmip--header h1 {
+                font-size: 18px;
+            }
+            .nei-body .tmip--header img {
+                width: 70px;
+                padding: 10px;
+            }
+		}
+
+    .nei-body .nei-tmip {
+        background-color: #FAFBFC;
+    }
+    .nei-body .nei-tmip-container {
+        display: flex;
+        padding-top: 20px;
+        max-width: 1430px;
+        margin: 0 auto;
+    }
+    .nei-tmip-categories span#nei-tmip-categoriesbtn {
+        display: none;
+    }
+
+    @media (max-width: 940px) {
+        .nei-body .nei-tmip-container {
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+
+    .nei-body .nei-tmip-categories {
+            max-width: 400px;
+            min-width: 300px;
+            padding: 20px;
+
+        }
+
+
+
+        .nei-body  .nei-tmip-categories a.get-email-alerts {
+            display: block; color: #FFF; padding: 8px 16px; font-size: 18px; border-radius: 5px; background-color: #FFB957; border: 2px solid #FFB957; text-decoration: none; text-align: center; transition: .2s;
+            width: fit-content;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .nei-body .nei-tmip-categories a.get-email-alerts:hover {
+            display: block; color: #FFF; padding: 8px 16px; font-size: 18px; border-radius: 5px; background-color: #ffad3a; border: 2px solid #ffad3a; text-decoration: none; text-align: center; transition: .2s;
+            width: fit-content;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+
+
+
+        .nei-body .nei-tmip-categories ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            
+        }
+
+        .nei-body .nei-tmip-categories li {
+            padding: 0;
+            margin: 0;
+            padding-bottom: 10px;
+            font-size: 14px;
+            list-style: none;
+            color: #262f35;
+        }
+
+        .nei-body .nei-tmip-categories li a {
+            padding: 0;
+            margin: 0;
+            padding-bottom: 10px;
+            font-size: 14px;
+            list-style: none;
+            color: #262f35;
+            font-family: 'Avenir', 'Nunito Sans', Arial, Helvetica, sans-serif;
+            text-decoration: none;
+        }
+
+        .nei-body .nei-tmip-categories li a:hover {
+            padding: 0;
+            margin: 0;
+            padding-bottom: 10px;
+            font-size: 14px;
+            list-style: none;
+            color: #10161a;
+            font-family: 'Avenir', 'Nunito Sans', Arial, Helvetica, sans-serif;
+            text-decoration: none;
+        }
+
+        .nei-body .nei-tmip-categories li A.lnk4:visited{
+            padding: 0;
+            margin: 0;
+            padding-bottom: 10px;
+            font-size: 14px;
+            list-style: none;
+            font-family: 'Avenir', 'Nunito Sans', Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color: #10161a;
+            text-decoration: none;
+        }
+
+        @media (max-width: 940px) {
+            .nei-body .nei-tmip-categories {
+                width: 100%;
+                max-width: unset;
+                min-width: unset;
+                padding: 0px;
+            }
+
+
+
+            .nei-body .nei-tmip-categories h4 {
+                display: none;
+            }
+
+            .nei-body .nei-tmip-categories span#nei-tmip-categoriesbtn {
+                font-size: 16px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                color: #888888;
+                border-top: 2px solid #e2e2e2;
+                border-bottom: 2px solid #e2e2e2;
+                text-align: center;
+                margin-bottom: 0;
+                display: block;
+                margin-top: 20px;
+                cursor: pointer;
+            }
+            .nei-body .nei-tmip-categories span#nei-tmip-categoriesbtn::after {
+                content: '\f329';
+                font-family: "Font Awesome 6 Pro", "Avenir", "Nunito Sans", Arial, Helvetica, sans-serif;
+                text-decoration: none;
+                font-weight: 900;
+                font-size: 16px;
+                text-rendering: optimizeLegibility;
+                padding-left: 8px;  
+            }
+            .nei-body .nei-tmip-categories ul {
+                background-color: #f3f3f3;
+                padding-top: 10px; 
+            }
+            .nei-body .nei-tmip-categories-list-hide {
+                display: none;
+            }
+            .nei-body .nei-tmip-categories ul li {
+                
+                text-align: center;
+                 
+            }
+            .nei-body .nei-tmip-categories a.get-email-alerts {
+                margin: 0 auto;
+            }
+        }  
+
+
+
+
+        .nei-body .tmip-individual-article .tmip-individual-article{
+        margin: 20px 20px 0px 20px;
+    }
+
+    .nei-body .tmip-individual-article .tmip-individual-article-header {
+        padding: 10px;
+    }
+
+    .nei-body .tmip-individual-article h1.tmip-individual-article--title {
+        padding-top: 0; 
+        margin-top: 20px;
+        margin-bottom: 10px; 
+       
+    }
+
+    .nei-body .tmip-individual-article h3.tmip-individual-article--date {
+        padding-top: 0; 
+        margin-top: 0;  
+        color: #646464;
+
+        font-weight: 300;
+    }
+
+
+    .nei-body .tmip-individual-article .nei-tmip-article-categorytags span.nei-tmip-article-categorytag a{
+        background-color: #FFEEBF;
+        font-size: 12px;
+        padding: 5px 8px ;
+        margin: 0px 5px 5px 0px;
+        display: inline-block;
+        width: fit-content;
+        border-radius: 20px; 
+        font-weight: 700;
+        color: #58390c;
+        text-decoration: none;
+
+    }
+    
+    .nei-body .tmip-individual-article .nei-tmip-article-categorytags span.nei-tmip-article-categorytag a:hover{
+        background-color: #FFEEBF;
+        font-size: 12px;
+        padding: 5px 8px ;
+        margin: 0px 5px 5px 0px;
+        display: inline-block;
+        width: fit-content;
+        border-radius: 20px; 
+        font-weight: 700;
+        color: #58390c;
+        text-decoration: none;
+    }
+
+
+
+.nei-body section.tmip_image100 {
+	text-align: center;
+	font-family: 'Avenir', 'Nunito Sans', Arial, Helvetica, sans-serif;
+	color: #3D474D;
+	line-height: normal;
+	box-sizing: border-box;
+	padding: 10px;
+    margin: 0;
+}
+.nei-body section.tmip_image100 img {
+	max-width: 500px;
+	width: 90%;
+	margin: 0 auto;
+	padding-bottom: 10px;
+}
+
+.nei-body section.tmip_image100 p {
+	max-width: 600px;
+	width: 100%;
+	line-height: normal;
+	font-size: 16px;
+	margin: 0 auto;
+}
+
+.nei-body section.tmip_text100 {
+	text-align: center;
+	font-family: 'Avenir', 'Nunito Sans', Arial, Helvetica, sans-serif;
+	color: #3D474D;
+	line-height: normal;
+	box-sizing: border-box;
+	padding: 10px;
+    margin: 0;
+}
+
+.nei-body section.tmip_text100 p {
+	text-align: left;
+	font-size: 16px;
+	line-height: normal;
+}
+
+.nei-body section.tmip_image40text60 {
+	text-align: center;
+	font-family: 'Avenir', 'Nunito Sans', Arial, Helvetica, sans-serif;
+	color: #3D474D;
+	line-height: normal;
+	box-sizing: border-box;
+	padding: 10px;
+    margin: 0;
+	display: flex;
+	justify-content: center;
+}
+
+.nei-body section.tmip_image40text60 img {
+		width: 40%;
+		height: fit-content;
+	}
+
+	.nei-body section.tmip_image40text60 p {
+		width: 60% ;
+		text-align: left;
+		padding-left: 50px;
+		line-height: normal;
+		font-size: 16px;
+		margin: 0;
+	}
+    @media (max-width: 640px) {
+
+        .nei-body section.tmip_image40text60 {
+            flex-wrap: wrap;
+        }
+        .nei-body section.tmip_image40text60 img {
+		width: 100%;
+	}
+
+	.nei-body section.tmip_image40text60 p {
+		width: 100%;
+        padding-left: 0;
+        padding-top: 10px;
+        }
+    }
+
+
+    .nei-body section.tmip_icon, .nei-body section.tmip_icon_member {
+        text-align: left;
+        font-family: 'Avenir', 'Nunito Sans', Arial, Helvetica, sans-serif;
+        color: #3D474D;
+        line-height: normal;
+        box-sizing: border-box;
+        padding: 0px;         
+        margin: 10px 0px 0px 0 ;       
+        background-color: #f6f8fa;
+        border-radius: 5px;
+    }
+    
+    .nei-body .tmip_icon p, .nei-body .tmip_icon_member p {
+            background-color: #fff;
+            padding-bottom: 20px;
+    
+        }
+    
+        .nei-body .tmip_icon h4, .nei-body .tmip_icon_member h4 {
+            line-height: normal;
+            font-size: 16px;  
+            margin: 20px 0px;          
+        }
+    
+        .nei-body .tmip_icons, .nei-body .tmip_icons_member {
+            display: flex;
+            justify-content: center;
+            padding: 20px; 
+        }
+    
+        .nei-body .tmip_icons img, .nei-body .tmip_icons_member img {
+            width: 65px;
+            height: 65px;
+            object-fit: cover;
+        }
+    
+        .nei-body .tmip_icons p, .nei-body .tmip_icons_member p {
+            width: 90% ;
+            text-align: left;
+            padding: 0px 0px 0px 30px;
+            margin: 0;
+            line-height: normal;
+            font-size: 16px;
+            background-color: #f6f8fa;
+        }
+    
+        .nei-body .tmip_icons a {
+            font-size: 16px;
+            color: #668ba1;
+        }
+        .nei-body .tmip_icons a:hover {
+            font-size: 16px;
+            color: #2d566e;
+        }
+    
+        .nei-body .tmip_icons_member a {
+            color: #62b840;
+            font-size: 16px;
+        }
+    
+        .nei-body .tmip_icons_member a:hover {
+            color: #3a881b;
+            font-size: 16px;
+        }
+    
+        .nei-body .tmip_icons_member a::after {
+            content: ' \2605  NEI Members Only';
+            padding-left: 8px;
+            display: inline-block;
+        }
+
+
+
+
+
+    .nei-body  .nei-tmip-articles {
+        padding: 0px 0px 0px 0px;
+        display: flex;
+        flex-wrap: wrap;
+        height: fit-content;
+        position: relative;
+    }
+
+    @media (max-width: 940px) {
+        .nei-body .nei-tmip-articles {
+            padding: 5px;
+    
+            justify-content: center;
+        }
+    }  
+
+    .nei-body .nei-tmip-article {
+        background-color: #fff;
+        box-shadow: 0 2px 22px rgba(87, 87, 87, 0.219);
+        border-radius: 10px;
+        width: 300px;
+        padding-bottom: 10px;
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .nei-body .nei-tmip-article.nei-tmip-article-members-only::before {
+        position: absolute;
+        content: '\002605  Members Only';
+        font-family: 'Avenir', 'Nunito Sans', Arial, Helvetica, sans-serif;
+		color: #FFF;
+		line-height: normal;
+		box-sizing: border-box;
+        background-color: var(--membership-green);
+        border-radius: 6px 0px 8px 0px;
+        padding: 8px 16px;
+        font-size: 12px;
+        font-weight: 700;
+    }
+
+    .nei-body .nei-tmip-article.nei-tmip-article-members-only {
+        border: 3px solid var(--membership-green) ;
+    }
+
+    .nei-body .nei-tmip-article img.nei-tmip-article-image {
+        width: 100%;
+        border-radius: 10px 10px 0px 0px;
+        height: 150px;
+        object-fit: cover;
+    }
+
+    .nei-body .nei-tmip-article .nei-tmip-article-categorytags span.nei-tmip-article-categorytag {
+        display: block;
+        margin: 20px 0px 0px 20px;
+    }
+
+    .nei-body .nei-tmip-article .nei-tmip-article-categorytags span.nei-tmip-article-categorytag a{
+        background-color: #FFEEBF;
+        font-size: 12px;
+        padding: 5px 8px ;
+        margin: 0px 5px 5px 0px;
+        display: inline-block;
+        width: fit-content;
+        border-radius: 20px; 
+        font-weight: 700;
+        color: #58390c;
+        text-decoration: none;
+
+    }
+    
+    .nei-body .nei-tmip-article .nei-tmip-article-categorytags span.nei-tmip-article-categorytag a:hover{
+        background-color: #FFEEBF;
+        font-size: 12px;
+        padding: 5px 8px ;
+        margin: 0px 5px 5px 0px;
+        display: inline-block;
+        width: fit-content;
+        border-radius: 20px; 
+        font-weight: 700;
+        color: #58390c;
+        text-decoration: none;
+    }
+
+    
+    .nei-body .nei-tmip-article h3.nei-tmip-article-title {
+        margin: 20px 20px 10px 20px;
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .nei-body .nei-tmip-article span.nei-tmip-article-date {
+        margin: 0px 20px 10px 20px;
+        font-size: 14px;
+        display: block;
+    }
+
+    .nei-body .nei-tmip-article p.nei-tmip-article-description {
+        margin: 0px 20px 10px 20px;
+        font-size: 14px;
+        display: block;
+        flex-grow: 1;
+        
+    }
+
+    .nei-body .nei-tmip-article a.nei-tmip-article-readnow {
+            display: block; color: #FFF; padding: 8px 16px; font-size: 14px; border-radius: 5px; background-color: #FFB957; border: 2px solid #FFB957; text-decoration: none; text-align: center; transition: .2s;
+            width: fit-content;
+            font-weight: 700;
+            margin: auto 20px 10px 20px;
+ 
+
+        }
+
+        .nei-body .nei-tmip-article a.nei-tmip-article-readnow:hover {
+            display: block; color: #FFF; padding: 8px 16px; font-size: 14px; border-radius: 5px; background-color: #ffad3a; border: 2px solid #ffad3a; text-decoration: none; text-align: center; transition: .2s;
+            width: fit-content;
+            font-weight: 700;
+            margin: auto 20px 10px 20px;
+ 
+
+        }
+
+        @media (max-width: 940px) {
+            .nei-body .nei-tmip-article {
+                border-radius: 10px;
+                width: 100%;
+                padding-bottom: 0px;
+                margin: 10px;
+                display: flex;
+                flex-direction: row;
+            }
+
+            .nei-body .nei-tmip-article img.nei-tmip-article-image {
+                width: 200px;
+                border-radius: 10px 0px 0px 10px;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .nei-body .nei-tmip-article .nei-tmip-article-categorytags span.nei-tmip-article-categorytag {
+                display: block;
+                margin: 30px 0px 0px 20px;
+            }
+
+            .nei-body .nei-tmip-article .nei-tmip-article-categorytags span.nei-tmip-article-categorytag a{
+                background-color: #FFEEBF;
+                font-size: 12px;
+                padding: 5px 8px ;
+                margin: 0px 5px 5px 0px;
+                display: inline-block;
+                width: fit-content;
+                border-radius: 20px; 
+                font-weight: 700;
+                color: #58390c;
+                text-decoration: none;
+
+            }
+            
+            .nei-body .nei-tmip-article .nei-tmip-article-categorytags span.nei-tmip-article-categorytag a:hover{
+                background-color: #FFEEBF;
+                font-size: 12px;
+                padding: 5px 8px ;
+                margin: 0px 5px 5px 0px;
+                display: inline-block;
+                width: fit-content;
+                border-radius: 20px; 
+                font-weight: 700;
+                color: #58390c;
+                text-decoration: none;
+            }
+            .nei-body .nei-tmip-article h3.nei-tmip-article-title {
+                margin: 10px 10px 10px 30px;
+                font-size: 14px;
+                font-weight: 700;
+            }
+
+            .nei-body  .nei-tmip-article span.nei-tmip-article-date {
+                margin: 10px 10px 10px 30px;
+                font-size: 12px;
+                display: block;
+            }
+
+            .nei-body .nei-tmip-article p.nei-tmip-article-description {
+                margin: 10px 10px 10px 30px;
+                font-size: 12px;
+                display: block;
+                flex-grow: 1;
+                
+            }
+
+
+            .nei-body .nei-tmip-article a.nei-tmip-article-readnow {
+                    display: block; color: #FFF; padding: 8px 16px; font-size: 14px; border-radius: 5px; background-color: #FFB957; border: 2px solid #FFB957; text-decoration: none; text-align: center; transition: .2s;
+                    width: fit-content;
+                    font-weight: 700;
+                    margin: 10px 10px 30px 30px;
+        
+
+                }
+
+                .nei-body .nei-tmip-article a.nei-tmip-article-readnow:hover {
+                    display: block; color: #FFF; padding: 8px 16px; font-size: 14px; border-radius: 5px; background-color: #ffad3a; border: 2px solid #ffad3a; text-decoration: none; text-align: center; transition: .2s;
+                    width: fit-content;
+                    font-weight: 700;
+                    margin: 10px 10px 30px 30px;
+        
+
+                }
+
+                }  
+
+        @media (max-width: 640px) {
+            .nei-body .nei-tmip-article img.nei-tmip-article-image {
+                display: none;
+            }
+        }
+
+
+
+
+    </style>
+</head>
+
+
+<body>
+<div class="nei-body">
+    <div class="nei--tmip">
+        <div class="tmip--header">
+            <img src="https://cdn.neiglobal.com/content/website/images/nei-website-tmip-header-icon-375x375.png">
+            <h1>This Month in Psychopharmacology</h1>
+        </div>
+
+        <div class="nei-tmip-container">
+            <div class="nei-tmip-categories">
+                <a href="#" class="get-email-alerts"><i class="fa-solid fa-envelope"></i> Get Email Alerts</a>
+                <h4>Categories</h4>
+                <span id="nei-tmip-categoriesbtn">Categories</span>
+                <ul id="nei-tmip-categories-list" class="nei-tmip-categories-list-hide">
+                    <li>All</li>
+                    <li>Addiction/Reward</li>
+                    <li>Additional Neurology Topics</li>
+                    <li>ADHD</li>
+                    <li style="font-weight: bold; color: darkorange;">Alzheimer’s/Other Dementias</li>
+                    <li>Anxiety/Stress-Related Disorders</li>
+                    <li>Neuroscience</li>
+                    <li>Bipolar Disorders</li>
+                    <li>Brain Injuries</li>
+                    <li>Child Psychiatry</li>
+                    <li>Cognitive Disorders</li>
+                    <li>Eating Disorders</li>
+                    <li>Forensic Psychiatry</li>
+                    <li>Geriatric Psychiatry</li>
+                    <li>OCD</li>
+                    <li>Pain</li>
+                    <li>Personality Disorders</li>
+                    <li>Pregnancy/Postpartum</li>
+                    <li>Professional Improvement</li>
+                    <li>Psychotic Disorders</li>
+                    <li>Sexual Disorder</li>
+                    <li>Side Effects</li>
+                    <li>Sleep</li>
+                    <li>Unipolar Depression</li>
+                </ul>
+            </div>
+
+            <div class="nei-tmip-articles">
+                <div class="nei-tmip-article">
+                    <img class="nei-tmip-article-image" src="https://cdn.neiglobal.com/content/tmip/tmip_psychosis_225x150.png">
+                    <div>
+                        <div class="nei-tmip-article-categorytags">
+                            <span class="nei-tmip-article-categorytag"><a href="#">Alzheimer’s/Other Dementias</a><a href="#">Additional Neurology Topics</a><a href="#">ADHD</a><a href="#">Anxiety/Stress-Related Disorders</a></span>
+                        </div>
+                        <h3 class="nei-tmip-article-title">5-HT4-Receptor Agonists May Boost Cognitive Impairments Associated With Psychiatric Disorders</h3>
+                        <span class="nei-tmip-article-date">00/00/0000</span>
+                        <p class="nei-tmip-article-description">Many psychiatric disorders include symptoms of cognitive impairment...</p>
+                        <a class="nei-tmip-article-readnow" href="#">Read More</a>                        
+                    </div>
+
+                </div>
+                <div class="nei-tmip-article nei-tmip-article-members-only">
+                    <img class="nei-tmip-article-image" src="https://cdn.neiglobal.com/content/tmip/tmip_psychosis_225x150.png">
+                    <div>
+                        <div class="nei-tmip-article-categorytags">
+                            <span class="nei-tmip-article-categorytag"><a href="#">Additional Neurology Topics</a></span>
+                        </div>
+                        <h3 class="nei-tmip-article-title">Insulin Resistance Linked to Major Depressive Disorder</h3>
+                        <span class="nei-tmip-article-date">00/00/0000</span>
+                        <p class="nei-tmip-article-description">Many psychiatric disorders include symptoms of cognitive impairment...</p>
+                        <a class="nei-tmip-article-readnow" href="#">Read More</a>                        
+                    </div>
+                </div>
+                <div class="nei-tmip-article nei-tmip-article-members-only">
+                    <img class="nei-tmip-article-image" src="https://cdn.neiglobal.com/content/tmip/tmip_psychosis_225x150.png">
+                    <div>
+                        <div class="nei-tmip-article-categorytags">
+                            <span class="nei-tmip-article-categorytag"><a href="#">Additional Neurology Topics</a></span>
+                        </div>
+                        <h3 class="nei-tmip-article-title">Insulin Resistance Linked to Major Depressive Disorder</h3>
+                        <span class="nei-tmip-article-date">00/00/0000</span>
+                        <p class="nei-tmip-article-description">Many psychiatric disorders include symptoms of cognitive impairment...</p>
+                        <a class="nei-tmip-article-readnow" href="#">Read More</a>                        
+                    </div>
+                </div>
+                <div class="nei-tmip-article">
+                    <img class="nei-tmip-article-image" src="https://cdn.neiglobal.com/content/tmip/tmip_psychosis_225x150.png">
+                    <div>
+                        <div class="nei-tmip-article-categorytags">
+                            <span class="nei-tmip-article-categorytag"><a href="#">Alzheimer’s/Other Dementias</a></span>
+                        </div>
+                        <h3 class="nei-tmip-article-title">5-HT4-Receptor Agonists May Boost Cognitive Impairments Associated With Psychiatric Disorders 5-HT4-Receptor Agonists May Boost Cognitive Impairments Associated With Psychiatric Disorders</h3>
+                        <span class="nei-tmip-article-date">00/00/0000</span>
+                        <p class="nei-tmip-article-description">Many psychiatric disorders include symptoms of cognitive impairment...</p>
+                        <a class="nei-tmip-article-readnow" href="#">Read More</a>                        
+                    </div>
+                </div>
+                <div class="nei-tmip-article">
+                    <img class="nei-tmip-article-image" src="https://cdn.neiglobal.com/content/tmip/tmip_psychosis_225x150.png">
+                    <div>
+                        <div class="nei-tmip-article-categorytags">
+                            <span class="nei-tmip-article-categorytag"><a href="#">Alzheimer’s/Other Dementias</a></span>
+                        </div>
+                        <h3 class="nei-tmip-article-title">5-HT4-Receptor Agonists May Boost Cognitive Impairments Associated With Psychiatric Disorders</h3>
+                        <span class="nei-tmip-article-date">00/00/0000</span>
+                        <p class="nei-tmip-article-description">Many psychiatric disorders include symptoms of cognitive impairment...</p>
+                        <a class="nei-tmip-article-readnow" href="#">Read More</a>                        
+                    </div>
+                </div>
+                <div class="nei-tmip-article">
+                    <img class="nei-tmip-article-image" src="https://cdn.neiglobal.com/content/tmip/tmip_psychosis_225x150.png">
+                    <div>
+                        <div class="nei-tmip-article-categorytags">
+                            <span class="nei-tmip-article-categorytag"><a href="#">Alzheimer’s/Other Dementias</a></span>
+                        </div>
+                        <h3 class="nei-tmip-article-title">5-HT4-Receptor </h3>
+                        <span class="nei-tmip-article-date">00/00/0000</span>
+                        <p class="nei-tmip-article-description">Many psychiatric disorders include symptoms of cognitive impairment...</p>
+                        <a class="nei-tmip-article-readnow" href="#">Read More</a>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+function toggleCategories(){
+    document.getElementById("nei-tmip-categories-list").classList.toggle("nei-tmip-categories-list-hide");
+}
+window.onload = function (){
+    document.getElementById("nei-tmip-categoriesbtn").addEventListener( 'click', toggleCategories);
+}
+
+
+</script>
+</body>
+</html>

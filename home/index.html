@@ -1,0 +1,815 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-AU-compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/4e837a30ce.js" crossorigin="anonymous"></script>
+    <link href="../index.css" type="text/css" rel="stylesheet">
+ 
+<body>
+
+<div class="navigation-cpv1">
+    <div class="navigation-cpv1-container">
+
+        <div class="top-bar">
+            <div class="top-bar-container">
+                <div class="top-logo">
+                    <a href="index.html"><img src="https://www.neiglobal.com/Portals/0/logo.gif?ver=2020-01-03-143442-773" class="logo-desktop"><img src="https://cdn.neiglobal.com/content/nei-shield-color-cmyk.png" class="logo-mobile"></a>
+                </div>
+                
+                <div class="nav-wdgts">
+                    <div class="nav-wdgts-container">
+                        <div class="wdgt-search">
+                            <a href="#"><i class="fas fa-search"></i><span class="nav-wdgts-title"> Search</span></a>
+                        </div>
+                        <div class="wdgt-shop">
+                            <a href="#"><i class="fas fa-shopping-cart"></i><span class="nav-wdgts-title"> View Cart (0)</span></a>
+                        </div>
+                        <div class="wdgt-logout wdgt-log" id="pnlOut" runat="server">
+                            <a href="/login.aspx"><i class="fas fa-sign-in-alt"></i><span class="nav-wdgts-title">Log In</span></a>
+                        </div>
+                        <div class="wdgt-login wdgt-log" id="pnlIn" runat="server">
+                            <a><i class="fas fa-user-circle"></i><span class="nav-wdgts-title">MyNEI <i class="fas fa-caret-down"></i></span></a>
+                        </div>
+
+                        <div class="hamburger">
+                            <a href="#"><i class="fas fa-bars"></i></a>
+                        </div>                 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-nav-nei neinav">
+            <div class="main-nav-container">
+                <div class="nav-links">
+                    <ul>
+                        <li class="nav-link">
+                            <a class="nei-dropdown-toggle">Membership <i class="fa-solid fa-angle-down dropdown-arrow"></i></a>
+                            <div class="dropdown">
+                                <ul class="dropdown-list-type">
+                                    <span class="dropdown-list-header dropdown-list-member-information"><i class="fas fa-info-circle"></i> Membership Information</span>
+                                    <li>
+                                        <ul>
+                                            <li>
+                                                <a href="membership.html">Sign Up or Renew</a>
+                                            </li>
+                                            <li>
+                                                <a href="membership.html">Overview</a>
+                                            </li>
+                                            <li>
+                                                <a href="membership.html">Rates</a>
+                                            </li>
+                                            <li>
+                                                <a href="membership.html">Groups and Institutions</a>
+                                            </li>
+                                            <li>
+                                                <a href="membership.html">Download Brochure</a>
+                                            </li>
+                                        </ul>                                        
+                                    </li>
+                                </ul>
+                                <ul class="dropdown-list-type">
+                                    <span class="dropdown-list-header dropdown-list-member-benefits"><i class="fas fa-tasks"></i> Member Benefits</span>
+                                    <li>
+                                        <ul>
+                                            <li>
+                                                <a href="myneiportal.html">My NEI Portal</a>
+                                            </li>
+                                            <li>
+                                                <a href="mpp.html">Master Psychopharmacology Program</a>
+                                            </li>
+                                            <li>
+                                                <a href="5ev.html">Stahl's Essential Psychopharmacology, Video Edition</a>
+                                            </li>
+                                            <li>
+                                                <a href="encore.html">Encore Presentations</a>
+                                            </li>
+                                            <li>
+                                                <a href="prescribe.html">NEI Prescribe</a>
+                                            </li>
+
+                                        </ul>
+                                    </li>                                
+                                </ul>
+                                <ul class="dropdown-button-type">
+                                    <li>
+                                        <div class="dropdown-button"><a href="membership.html">
+                                            <img src="bam.png">
+                                            <span>Become a Member</span>
+                                        </a></div>
+                                    </li>
+                                    <li>
+                                        <div class="dropdown-button"><a href="membership.html">
+                                            <img src="mp.png">
+                                            <span>My NEI Portal</span>
+                                        </a></div>
+                                        
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-link">
+                            <a class="nei-dropdown-toggle">Meetings <i class="fa-solid fa-angle-down dropdown-arrow"></i></a>
+                            <div class="dropdown">
+                                <ul class="dropdown-list-type">
+                                    <span class="dropdown-list-header dropdown-list-nei-meetings"><i class="fas fa-calendar-alt"></i> NEI Meetings</span>
+                                    <li>
+                                        <ul>
+                                            <li>
+                                                <a href="meetings.html">2022 Congress</a>
+                                            </li>
+                                            <li>
+                                                <a href="meetings.html">2022 Synapse</a>
+                                            </li>
+                                            <li>
+                                                <a href="meetings.html">2022 Saturday Morning Live</a>
+                                            </li>
+                                        </ul>                                        
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-link">
+                            <a class="nei-dropdown-toggle">Practice Tools <i class="fa-solid fa-angle-down dropdown-arrow"></i></a>
+                            <div class="dropdown">
+                                <ul class="dropdown-list-type">
+                                    <span class="dropdown-list-header dropdown-list-practice-tools"><i class="fas fa-brain"></i> Practice Tools</span>
+                                    <li>
+                                        <ul>
+                                            <li>
+                                                <a href="prescribe.html">NEI Prescribe (Web Access)</a>
+                                            </li>
+                                            <li>
+                                                <a href="prescribe.html">NEI Prescribe (Download App)</a>
+                                            </li>
+                                            <li>
+                                                <a href="practice-tools.html">Prescriber's Guide (PDFs)</a>
+                                            </li>
+                                            <li>
+                                                <a href="practice-tools.html">Medication Tips and Pearls</a>
+                                            </li>
+                                            <li>
+                                                <a href="practice-tools.html">Patient Education</a>
+                                            </li>
+
+                                        </ul>
+                                    </li>                                
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-link">
+                            <a class="nei-dropdown-toggle">Teaching Tools <i class="fa-solid fa-angle-down dropdown-arrow"></i></a>
+                            <div class="dropdown">
+                                <ul class="dropdown-list-type">
+                                    <span class="dropdown-list-header dropdown-list-teaching-tools"><i class="fas fa-chalkboard-teacher"></i> Teaching Tools</span>
+                                    <li>
+                                        <ul>
+                                            <li>
+                                                <a href="teaching-tools.html">Teaching Videos</a>
+                                            </li>
+                                            <li>
+                                                <a href="teaching-tools.html">Stahl's Essential Teaching Slides and Tests</a>
+                                            </li>
+                                            <li>
+                                                <a href="teaching-tools.html">NEI Teaching Slides</a>
+                                            </li>
+                                            <li>
+                                                <a href="teaching-tools.html">Proctor: Master Psychopharmacology Program</a>
+                                            </li>
+                                        </ul>                                        
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-link">
+                            <a class="nei-dropdown-toggle">Online CME/CE <i class="fa-solid fa-angle-down dropdown-arrow"></i></a>
+                            <div class="dropdown">
+                                <ul class="dropdown-list-type">
+                                    <span class="dropdown-list-header dropdown-list-online-cmece"><i class="fas fa-desktop"></i> By Format</span>
+                                    <li>
+                                        <ul>
+                                            <li>
+                                                <a href="cmece.html">Featured Activities</a>
+                                            </li>
+                                            <li>
+                                                <a href="cmece.html">On Demand Videos</a>
+                                            </li>
+                                            <li>
+                                                <a href="cmece.html">Cases</a>
+                                            </li>
+                                            <li>
+                                                <a href="cmece.html">Articles</a>
+                                            </li>
+                                            <li>
+                                                <a href="cmece.html">Animations</a>
+                                            </li>
+                                            <li>
+                                                <a href="cmece.html">Self-Assessments (MOC)</a>
+                                            </li>
+                                            <li>
+                                                <a href="cmece.html">Certificate Program</a>
+                                            </li>
+                                        </ul>                                        
+                                    </li>
+                                </ul>
+                                <ul class="dropdown-list-type">
+                                    <span class="dropdown-list-header dropdown-list-online-cmece"><i class="fas fa-desktop"></i> By Specialty</span>
+                                    <li>
+                                        <ul>
+                                            <li>
+                                                <a href="/Default.aspx?tabname=PC">Primary Care</a>
+                                            </li>
+                                            <li>
+                                                <a href="/Default.aspx?tabname=Search&topic=CHILD">Pediatric</a>
+                                            </li>
+                                        </ul>                                        
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            
+
+        </div>
+
+    </div>
+</div>
+
+<section class="home_rotating_banners">
+
+    <div class="home_rotating_banners-container">
+
+        <div class="home_rotating_banner bannerFade">
+            <div class="home_rotating_banner--center_text" style="background-image: url(https://cdn.neiglobal.com/content/website/images/24home-24cng.webp);">
+                <div class="text">
+                    <div class="text-container">
+                       
+                        <h1>
+                            Celebrating 20 Years – NEI Congress
+                        </h1>
+                        <br>
+                        <h4>November 7-10, 2024 <br>
+                            Colorado Springs, CO & Online Via Simulcast  </h4>
+                        <br>
+                        <p>Partake in the ONLY conference that brings the essential textbook of psychopharmacology to life </p>
+                        <div class="buttons">
+                            <a class="nei_button-filled" href="/Default.aspx?tabname=CNGRegDetails">Register At Opening Rates</a>
+                            <a class="light_button-filled" href="/Default.aspx?tabname=CNGOverview">Learn More</a>
+                        </div>
+                        <br><br>
+                    </div>
+                    
+                </div>            
+            </div>
+        </div>
+
+        <div class="home_rotating_banners-container">
+            <div class="home_rotating_banner bannerFade">
+              <div class="home_rotating_banner--center_text" style="background-image: url(https://cdn.neiglobal.com/content/website/images/24home-EOYmem.jpg);">
+                  <div class="text" style="background-color: rgba(52, 11, 11, 0.033);">
+                      <div class="text-container">
+                          <img src="https://cdn.neiglobal.com/content/website/images/nei-membership-logo-1800x450_white.png" alt=" ">
+                          <br>
+                          <h1>
+                              Save $50 on New Membership
+                          </h1>
+                          <br>
+                          <h4>Become an NEI Member with code <strong>YR23HP</strong>  </h4>
+                          <br>
+                          <p>Join today before this special end-of-year promotion expires 
+                              <BR>
+                              <small><I>Offer expires 12/31/2023</I></small> </p>
+                          <div class="buttons">
+                              <a class="membership_button-filled" href="/Default.aspx?tabname=MBRBecome">Join Now</a>
+                              <a class="light_button-filled" href="/Default.aspx?tabname=MBROverview">Learn About Membership</a>
+                          </div>
+                          <br><br>
+                      </div>
+                  </div>            
+              </div>
+             </div>
+          </div>
+
+
+    </div>
+    
+</section>
+
+<div class="bannerControls">
+    <span class="bannerPrev" onclick="plusSlides(-1); "><i class="fa-solid fa-caret-left"></i></span>
+    <span class="bannerDot" onclick='currentSlide(1)'><i class="fa-solid fa-circle-small"></i></span>
+    <span class="bannerDot" onclick='currentSlide(2)'><i class="fa-solid fa-circle-small"></i></span>
+    <span class="bannerNext" onclick="plusSlides(1);"><i class="fa-solid fa-caret-right"></i></span>
+</div>
+
+<script>
+    var bannerIndex = 1;
+
+var bannerTimer;
+
+var bannerContainer;
+
+window.addEventListener("load",function() {
+    showBanner(bannerIndex);
+    bannerTimer = setInterval(function(){plusSlides(1)}, 5000);
+
+    //UNCOMMENT OUT THE LINE BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
+    //bannerContainer = document.getElementsByClassName('home_rotating_banners-container')[0];
+
+    //UNCOMMENT OUT THE LINE BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
+    // bannerContainer = document.getElementsByClassName('home_rotating_banners')[0];
+
+    //UNCOMMENT OUT THE LINE BELOW TO MAKE HOVER PAUSE THE ROTATION
+    //bannerContainer.addEventListener('mouseenter', pause)
+    //bannerContainer.addEventListener('mouseleave', resume)
+})
+
+// NEXT AND PREVIOUS CONTROL
+function plusSlides(n){
+clearInterval(bannerTimer);
+if (n < 0){
+    showBanner(bannerIndex -= 1);
+} else {
+    showBanner(bannerIndex += 1); 
+}
+
+//COMMENT OUT THE LINES BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
+
+if (n === -1){
+    bannerTimer = setInterval(function(){plusSlides(n + 2)}, 5000);
+} else {
+    bannerTimer = setInterval(function(){plusSlides(n + 1)}, 5000);
+}
+}
+
+//Controls the current slide and resets interval if needed
+function currentSlide(n){
+clearInterval(bannerTimer);
+bannerTimer = setInterval(function(){plusSlides(n + 1)}, 5000);
+showBanner(bannerIndex = n);
+}
+
+function showBanner(n){
+var i;
+var slides = document.getElementsByClassName("home_rotating_banner");
+var bannerDots = document.getElementsByClassName("bannerDot");
+if (n > slides.length) {bannerIndex = 1}
+if (n < 1) {bannerIndex = slides.length}
+for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+}
+for (i = 0; i < bannerDots.length; i++) {
+    bannerDots[i].className = bannerDots[i].className.replace(" bannerActive", "");
+}
+slides[bannerIndex-1].style.display = "block";
+bannerDots[bannerIndex-1].className += " bannerActive";
+}
+
+pause = () => {
+clearInterval(bannerTimer);
+}
+
+resume = () =>{
+clearInterval(bannerTimer);
+bannerTimer = setInterval(function(){plusSlides(bannerIndex)}, 5000);
+}
+</script>
+
+<section class="home_learn">
+    <div class="home_learn-container">
+        <div class="home_learn_mem">
+            <div class="home_learn_mem-container">
+                <div class="text">
+                    <h1>NEI <span>Membership</span></h1>
+                    <br>
+                    <p>NEI Membership gives you exclusive access to practical point-of-care resources, an extensive library of online
+                        education, and significant discounts on registration to our live and virtual events, all designed to help you stay
+                        current in your clinical practice.</p>
+                    <br>
+                    <ul>
+                        <li><i class="fa-solid fa-book"></i> Enhance Your Knowledge</li>
+                        <li><i class="fa-solid fa-clipboard-medical"></i> Provide Better Care</li>
+                        <li><i class="fa-solid fa-hospital-user"></i> Improve Patient Outcomes</li>
+                    </ul>
+                    <br>
+                    <div class="buttons">
+                        <a class="membership_button-filled" href="/Default.aspx?tabname=MBRBecome">Join or Renew</a>
+                        <a class="membership_button-open" href="/Default.aspx?tabname=MBROverview">Learn More</a>
+                    </div>
+                </div>
+                <div class="lottie">
+                    <img src="https://cdn.neiglobal.com/content/website/images/memanim-image.webp" alt="">
+                    <!-- <lottie-player src="https://cdn.neiglobal.com/content/website/json/memanim-icons_only.json" background="transparent"  speed="1" loop autoplay></lottie-player> -->
+                </div>
+            </div>
+        </div>
+        <div class="home_learn-curve"></div>
+        <div class="home_learn_meet">
+            <div class="home_learn_meet-container">
+                <div class="lottie">
+                    <img src="https://cdn.neiglobal.com/content/website/images/meetanim-image.webp" alt="">
+                </div>
+                <div class="text">
+                    <h1>NEI Live Meetings</h1>
+                    <br>
+                    <p>Our live meetings, both in-person and online via simulcast, provide cutting-edge, visually engaging, and evidence-based education from world-class clinicians, researchers, and educators.</p>
+                    <br>
+                    <ul>
+                        <li>Earn CME/CE Credits <i class="fa-solid fa-coins"></i></li>
+                        <li>Learn from expert faculty <i class="fa-solid fa-person-chalkboard"></i></li>
+                        <li>Advance your clinical knowledge <i class="fa-solid fa-brain-circuit"></i></li>
+                    </ul>
+                    <br>
+                    <div class="buttons">
+                        <a class="nei_button-filled" href="/Default.aspx?tabname=Meetings">Learn More</a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="home_grid">
+    <div class="home_grid-container">
+        <div class="home_grid--educ_op">
+            <div class="home_grid--educ_op-container">
+                <div class="text">
+                    <div>
+                        <h1>New Educational Opportunities</h1>
+                        <br>
+                        <p>
+                            Looking to enhance your understanding on a specific topic and earn free CME/CE credits?
+                            <br><br>
+                            Complete one of our hundreds of online activities.
+                        </p>
+                    </div>
+
+                    <img src="https://cdn.neiglobal.com/content/website/images/home-educ.png">
+                </div>
+                <div class="activities">
+                    <div class="activities-box">
+                        <div class="activities-icon">
+                            <img src="https://cdn.neiglobal.com/content/website/images/featured-activities-casestudy-240x240.png">
+                        </div>
+                        <div class="activities-text">
+                            <h4>62-Year-Old Mother With Schizophrenia Who Feels Embarrassed By Her “Shakiness”</h4>
+
+                            <p><i>Expert Clinical Case - 0.50 CME credit</i></p>
+                        </div>
+                        <div class="activities-button">
+                            <a class="dark_button-filled" href="/Default.aspx?tabname=ECCPortalActivityView&action=case&args=CT_AT-ECC22-TD-02">Start Now</a>
+                        </div>
+                    </div>
+                    <div class="activities-box">
+                        <div class="activities-icon">
+                            <img src="https://cdn.neiglobal.com/content/website/images/featured-activities-podcast-240x240.png">
+                        </div>
+                        <div class="activities-text">
+                            <h4>The Efficacy and Safety of VMAT2 Inhibitors for the Treatment of Tardive Dyskinesia</h4>
+
+                            <p><i>Podcast Activity - 1.00 CME credit</i></p>
+                        </div>
+                        <div class="activities-button">
+                            <a class="dark_button-filled" href="/Default.aspx?tabname=PodHldr&action=case&args=CT_AT-POD22-02-TD-03">Start Now</a>
+                        </div>
+                    </div>
+                    <div class="activities-box">
+                        <div class="activities-icon">
+                            <img src="https://cdn.neiglobal.com/content/mynei/icons/my-nei-icons-members-congressencore.png">
+                        </div>
+                        <div class="activities-text">
+                            <h4>Bullseye? Emerging Approaches to the Treatment of Schizophrenia</h4>
+
+                            <p><i>Encore Presentation - 1.00 CME credit</i></p>
+                        </div>
+                        <div class="activities-button">
+                            <a class="dark_button-filled" href="/Default.aspx?tabname=EncHldrNM&action=case&args=CT_AT-ENC22-22SML05-01">Start Now</a>
+                        </div>
+                    </div>
+                    <div class="activities-box">
+                        <div class="activities-icon">
+                            <img src="https://cdn.neiglobal.com/content/mynei/icons/my-nei-icons-members-congressencore.png">
+                        </div>
+                        <div class="activities-text">
+                            <h4>Eenie Meenie: How to Choose and When to Switch Antipsychotic Medications</h4>
+
+                            <p><i>Encore Presentation - 1.00 CME credit</i></p>
+                        </div>
+                        <div class="activities-button">
+                            <a class="dark_button-filled" href="/Default.aspx?tabname=EncHldrNM&action=case&args=CT_AT-ENC22-22SML05-02">Start Now</a>
+                        </div>
+                    </div>
+                    <div class="activities-box">
+                        <div class="activities-icon">
+                            <img src="https://cdn.neiglobal.com/content/mynei/icons/my-nei-icons-members-congressencore.png">
+                        </div>
+                        <div class="activities-text">
+                            <h4>Too Much or Too Little: Sleep Issues and How to Treat Them</h4>
+
+                            <p><i>Encore Presentation - 0.75 CME credit</i></p>
+                        </div>
+                        <div class="activities-button">
+                            <a class="dark_button-filled" href="/Default.aspx?tabname=EncHldrNM&action=case&args=CT_AT-ENC22-22SYN-08">Start Now</a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="home_grid--side-container">
+            <div class="home_grid--quick_lnk">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="/Default.aspx?tabname=My%20NEI">My NEI Portal</a></li>
+                    <li><a href="/Default.aspx?tabname=EncOvrDynCng">Encore Portal</a></li>
+                    <li><a href="/Default.aspx?tabname=MPPOverview">Master Psychopharmacology Program Portal</a></li>
+                    <li><a href="/Default.aspx?tabname=PatientTools">Patient Education Portal</a></li>
+                    <li><a href="/Default.aspx?tabname=NEIVSPSummary">Poster Library</a></li>
+                    <li><a href="/Default.aspx?tabname=DSPMain">Disease State Portal</a></li>
+                </ul>
+            </div>
+<!--             <div class="home_grid--indus">
+                <img src="https://cdn.neiglobal.com/content/email/graphics/doc-icon-180x180.png">
+                <br><br>
+                <h4>Looking for Sponsorship Opportunities?</h4>
+                <br>
+                <div class="activities-button">
+                    <a class="light_button-filled" href="#">NEI Congress</a>
+                    <br>
+                    <a class="light_button-filled" href="#">NEI Synapse</a>
+                </div>
+            </div> -->
+            <a class="home_grid--indus_cng" href="/Default.aspx?tabname=CNGGrantorExb">
+                <img src="https://cdn.neiglobal.com/content/email/graphics/doc-icon-180x180.png">
+                <h4><span>Congress</span> Sponsorship Opportunities</h4>
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a class="home_grid--indus_syn" href="/Default.aspx?tabname=SYNGrantorExb">
+                <img src="https://cdn.neiglobal.com/content/email/graphics/doc-icon-180x180.png">
+                <h4><span>Synapse</span> Sponsorship Opportunities</h4>
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<section class="home_psychopharm">
+    <div class="home_psychopharm-container">
+        <div class="home_psychopharm--news_img">
+            <img src="https://cdn.neiglobal.com/content/website/images/home-psychopharm-news.png" alt=" ">
+        </div>
+        <div class="home_psychopharm--articles">
+            <img src="https://cdn.neiglobal.com/content/website/images/nei-website-tmip-header-icon-375x375.png" alt=" ">
+            <h1>This Month in Psychopharmacology</h1>
+            <div class="home_psychopharm--articles-container">
+                <div class="home_psychopharm--arrow tmipPrev" onclick="plusTmip(-1);"> 
+                    <button type="button" class="home_psychopharm--left" aria-label="previous"><i class="fas fa-chevron-left"></i></button>
+                </div>
+                <div class="home_psychopharm--article"> 
+                    <h4>
+                        Psilocybin for Treatment of Alcohol Use Disorder 
+                    </h4>    
+                    <p><i></i></p> 
+                    <a class="nei_button-filled" href="/default.aspx?tabname=MonthInPsychopharmPost&topic=20671">Learn More</a>
+                </div>
+                <div class="home_psychopharm--article"> 
+                    <h4>
+                        Folic Acid Tied to a Reduction in Suicide Attempts 
+                    </h4>     
+                    <p><i></i></p> 
+                    <a class="nei_button-filled" href="/default.aspx?tabname=MonthInPsychopharmPost&topic=20668">Learn More</a>
+                </div>
+                <div class="home_psychopharm--article"> 
+                    <h4>
+                        FDA Approves Oral NMDA Receptor Antagonist for the Treatment of MDD 
+                    </h4>     
+                    <p><i></i></p> 
+                    <a class="nei_button-filled" href="/default.aspx?tabname=MonthInPsychopharmPost&topic=20653">Learn More</a>
+                </div>
+                <div class="home_psychopharm--article"> 
+                    <h4>
+                        Saliva Microbiome, Dietary, and Genetic Markers Associated With Suicidal Ideation 
+                    </h4>    
+                    <p><i></i></p>  
+                    <a class="nei_button-filled" href="/default.aspx?tabname=MonthInPsychopharmPost&topic=20662">Learn More</a>
+                </div>
+                <div class="home_psychopharm--article"> 
+                    <h4>
+                        Keep up-to-date on the latest in psychopharmacology and mental health research!   
+                    </h4>    
+                    <p><i></i></p>  
+                    <a class="nei_button-filled" href="/Default.aspx?tabname=MonthInPsychopharmNew">Read the Latest News </a>
+                </div>
+                <div class="home_psychopharm--arrow tmipNext" onclick="plusTmip(1);">
+                    <button type="button" class="home_psychopharm--right" aria-label="next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+
+        </div>
+        
+
+        <div class="home_psychopharm--coffee_img">
+            <img src="https://cdn.neiglobal.com/content/website/images/home-psychopharm-coffee.png" alt=" ">
+        </div>
+
+
+    </div>
+</section>
+
+<script>
+var tmipIndex = 1;
+var tmipContainer;
+
+window.addEventListener("load",function() {
+    showTmip(tmipIndex);
+})
+
+function plusTmip(n){
+if (n < 0){
+    showTmip(tmipIndex -= 1);
+} else {
+    showTmip(tmipIndex += 1); 
+}
+}
+
+function currentTmip(n){
+showTmip(tmipIndex = n);
+}
+
+function showTmip(n){
+var i;
+var tmips = document.getElementsByClassName("home_psychopharm--article");
+
+if (n > tmips.length) {tmipIndex = 1}
+if (n < 1) {tmipIndex = tmips.length}
+for (i = 0; i < tmips.length; i++) {
+    tmips[i].style.display = "none";
+}
+
+tmips[tmipIndex-1].style.display = "block";
+
+}
+
+
+</script>
+
+<section class="home-apps">
+    <div class="home-apps-container">
+        <div class="home-apps-learn">
+            <div class="home-apps--learn-text">
+                <div>
+                    <h1>NEI Learn</h1>
+                    <br>
+                    <p>Access CME/CE from your mobile device.</p>
+                    <br>                    
+                </div>
+                <div>
+                    <a href="https://itunes.apple.com/us/app/nei-learn/id1258833856?mt=8" style="width: 150px;" target="_blank" aria-label="Download NEI Learn on Apple Store"><img src="https://cdn.neiglobal.com/content/ui/app-store-apple.png" alt=" "></a>
+                    <a href="https://play.google.com/store/apps/details?id=com.mp.nei.learn" style="width: 150px;" target="_blank" aria-label="Download NEI Learn on Google Store"><img src="https://cdn.neiglobal.com/content/ui/app-store-google.png" alt=" "></a>                    
+                </div>
+            </div>
+            <div class="home-apps--learn-img">
+                <img src="https://cdn.neiglobal.com/content/website/images/home-apps-learn.webp" alt="">
+            </div>
+        </div>
+
+        <div class="home-apps-prescribe">
+            <div class="home-apps--prescribe-text">
+                <div>
+                    <h1>NEI Prescribe</h1>
+                    <br>
+                    <p>Keep essential prescribing information at your fingertips with NEI Prescribe.</p>
+                    <br>
+                </div>
+                <div>
+                    <a href="https://itunes.apple.com/us/app/nei-prescribe/id911005926?mt=8" style="width: 150px;" target="_blank" aria-label="Download NEI Prescribe on Apple Store"><img src="https://cdn.neiglobal.com/content/ui/app-store-apple.png" alt=" "></a>
+                    <a href="https://play.google.com/store/apps/details?id=com.mobileprogramming.nei" style="width: 150px;" target="_blank" aria-label="Download NEI Prescribe on Google Store"><img src="https://cdn.neiglobal.com/content/ui/app-store-google.png" alt=" "></a>                    
+                </div>
+
+            </div>
+            <div class="home-apps--prescribe-img">
+                <img src="https://cdn.neiglobal.com/content/website/images/home-apps-prescribe.webp" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="home-podcast">
+    <div class="home-podcast-container">
+        <img src="https://cdn.neiglobal.com/content/website/images/home-podcast-icn.png" alt=" ">
+        <h1>NEI Podcast</h1>
+        <p>Each episode offers an opportunity to learn about current issues in psychiatry from key opinion leaders in the medical field. </p>
+        <br>
+        <a class="light_button-filled" href="https://neiglobal.libsyn.com/" style="width: 150px;" target="_blank">Learn More</a>
+    </div>
+</section>
+
+<section class="home-newsletter">
+    <div class="home-newsletter-container">
+        <div class="home-newsletter--text">
+            <h1>Want to stay in touch?</h1>
+            <br>
+            <p>Bet the first to hear about new CME activities, meetings, discounts, and much more!</p>
+        </div>
+        <div class="home-newsletter--form">
+            <div class="home-newsletter--form-container">
+            <a class="nei_button-filled" href="/Default.aspx?tabname=InterestList">Click Here to Subscribe</a>
+<!--                 <form action="">
+                    <input type="email"  maxlength="50" required placeholder="Enter your email address">
+                    <button class="nei_button-filled">Subscribe</button>
+                </form> -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="footer-cpv1">
+    <div class="footer-cpv1-container">
+        <div class="upper-footer">
+            <div>
+                <ul>
+                    <li><b>ACCESS</b></li>
+                    <li><a href="/Default.aspx?tabname=MBRBecome">Become a Member</a></li>
+                    <li><a href="/Default.aspx?tabname=CreateNewUser">Create an Account</a></li>
+                    <li><a href="/Default.aspx?tabname=InterestList">Join Our Mailing List</a></li>
+                    <li><a href="/Default.aspx?tabname=NEIPrescribeOverview">Download NEI Prescribe</a> </li>
+                    <li><a href="/Default.aspx?tabname=NEILearnOverview">Download NEI Learn</a> </li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><b>MEMBERSHIP</b></li>
+                    <li><a href="/Default.aspx?tabname=MBRBecome">Join Now</a></li>
+                    <li><a href="/Default.aspx?tabname=MBROverview">Membership Benefits</a></li>
+                    <li><a href="/Default.aspx?tabname=MBRRates">Membership Rates</a></li>
+                    <li><a href="/Default.aspx?tabname=MBRGroup">Groups and Institutions</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><b>MEETINGS</b></li>
+                    <li><a href="/Default.aspx?tabname=CNGOverview">NEI Congress</a> </li>
+                    <li><a href="/Default.aspx?tabname=SYNOverview">NEI Synapse</a></li>
+                    <li><a href="/Default.aspx?tabname=SMLOverview">NEI Saturday Morning Live</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><b>ON DEMAND</b></li>
+                    <li><a href="/Default.aspx?tabname=FeaturedActivities">Featured CME Activities</a></li>
+                    <li><a href="/Default.aspx?tabname=MonthInPsychopharmNew">News and Updates</a></li>                        
+                    <li><a href="/Default.aspx?tabname=EncOvrDynCng">Encore Presentations</a></li>
+                    <li><a href="/Default.aspx?tabname=MPPOverview">Master Psychopharmacology Program</a></li>
+                    <li><a href="https://neiglobal.libsyn.com/" target="_blank">NEI Podcast</a></li>
+
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><b>ABOUT</b></li>
+                    <li><a href="/Default.aspx?tabname=About%20NEI"><i class="fas fa-info-circle" aria-hidden="true"></i> About Us<strong></strong></a></li>
+                    <li><a href="/Default.aspx?tabname=ContactUs"><i class="fa-solid fa-envelope"></i> Contact Us<strong></strong></a></li>
+                    <li><a href="/Default.aspx?tabname=Acc"><i class="fa-solid fa-circle-check"></i> Accreditation<strong></strong></a></li>
+                    <li><a href="/Default.aspx?tabname=Testimonials"><i class="fas fa-comment" aria-hidden="true"></i> Testimonials<strong></strong></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="lower-footer">
+            <div class="lower-footer-border">
+                <div style="width: 100%;"><hr></div>
+                <div class="footer-socials">
+                    <a href="https://neiglobal.libsyn.com/" target="_blank"><i class="fas fa-podcast" aria-hidden="true"></i></a>
+                    <a href="https://www.facebook.com/NEIglobal/" target="_blank"><i class="fab fa-facebook-square" aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/company/neuroscience-education-institute/mycompany/" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="https://twitter.com/neiglobal" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
+                    <a href="https://www.youtube.com/user/neipsychopharm" target="_blank"><i class="fab fa-youtube-square" aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com/nei.global" target="_blank"><i class="fab fa-instagram-square" aria-hidden="true"></i></a>
+                </div>
+                <div style="width: 100%;"><hr></div>
+            </div>
+            <div class="lower-footer-legal">
+                <div>
+                    <a href="/Default.aspx"><img src="https://cdn.neiglobal.com/content/website/images/horizontal-hmp-white.png"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+
+
+
+</html>

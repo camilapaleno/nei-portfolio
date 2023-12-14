@@ -1,0 +1,767 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href="https://cdn.neiglobal.com/content/include/css/style.css" type="text/css" media="all" rel="stylesheet"/>
+	<script src="https://kit.fontawesome.com/4e837a30ce.js" crossorigin="anonymous"></script>
+	<style>
+
+
+.nei-encore-container * {
+        font-family: Avenir, Nunito Sans, Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        color: #707070;
+    }
+
+    .nei-encore-container {
+        width: 100%;
+        font-family: Avenir, Nunito Sans, Arial, Helvetica, sans-serif;
+    }
+
+    .nei-encore-container p, .nei-encore-container h4, .nei-encore-container span, .nei-encore-container a {
+        font-family: Avenir, Nunito Sans, Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nei-encore-container p, .nei-encore-container a {
+        font-size: 14px;
+    }
+
+    .nei-encore-container i {
+        font-family: 'Font Awesome 6 Pro';
+    }
+
+    .nei-encore {
+        width: 100%;
+    }
+    .nei-encore-header-container {
+        width: 100%;
+        background-color: #F4F4F4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .nei-encore-header {
+        width: 100%;
+        max-width: 1600px;
+        margin: 0 auto;
+        padding: 50px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .nei-encore-header .nei-encore-vps {
+
+    font-size: 36px;
+    font-weight: 900;
+    color: #2AAAE2;
+
+    display: flex;
+    align-items: center;
+    }
+
+    .nei-encore-header .nei-encore-vps img {
+    width: 64px;
+    margin-right: 20px;
+    }
+
+    .nei-encore-header .nei-encore-vps div {
+    font-size: 24px;
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    margin-right: 50px;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .nei-encore-header .nei-encore-vps div:hover {
+    background-color: #cecece;
+
+    }
+    .nei-encore-header .nei-encore-vps a {
+        font-size: 24px;
+        height: 36px;
+        width: 36px;
+        border-radius: 50%;
+        margin-right: 50px;
+        text-decoration: none;
+        
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nei-encore-header .nei-encore-vps a:hover {
+        background-color: #cecece;
+        text-decoration: none;
+        
+    }
+
+    .nei-encore-search {
+        display: flex;
+        width: 40%;
+
+    }
+    .nei-encore-search_box {
+        width: 100%;
+        border-radius: 0;
+        border: 0;
+        margin: 0;
+        display: block;
+        padding: 8px 16px;
+    }
+    .nei-encore-search_submit {
+        padding: 8px 16px;
+        display: block;
+        text-decoration: none;
+        background-color: #2AAAE2;
+        color: #FFF;
+        font-weight: 800;
+        font-size: 14px;
+        border: 0;
+        padding: 8px 16px;
+        text-align: center;
+    }
+
+    .nei-encore-overview-container {
+        width: 100%;
+        max-width: 1600px;
+        margin: 0 auto;
+
+        
+    }
+    .nei-encore-sort {
+        width: 100%;
+        padding: 20px 30px;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px #b0bbca solid;
+    }
+    .nei-encore-overview {
+        width: 100%;
+        
+        display: flex;
+
+    }
+    .nei-encore-filterbtn {
+        opacity: 0;
+        
+    }
+    .nei-encore-filters {
+        width: 20%;
+        min-width: 250px;
+        padding: 30px 30px;
+    }
+
+    .nei-encore-filters-hide {
+        display: block;
+    }
+    .nei-encore-filter {
+        margin-bottom: 20px;
+    }
+    .nei-encore-filter label{
+        margin-left: 10px;
+    }
+
+    .nei-encore-filter-select {
+        width: 100%;
+    }
+    .nei-encore-presentations-container {
+
+        padding: 30px 30px;
+
+    }
+    .nei-encore-presentation {
+        padding: 15px 0px;
+    }
+    .nei-encore-result {
+        padding-bottom: 10px;
+    }
+    .nei-encore-presentation a{
+        font-weight: 800;
+        color: #5986C2;
+        text-decoration: underline;
+        font-size: 16px;
+    }
+
+    .nei-encore-presentation-wrapper {
+        display: flex;
+        align-items: center;
+      }
+      
+      .nei-encore-frame {
+        height: 200px;
+        width: 355px;
+        min-width: 350px;
+        position: relative;
+      }
+      
+      .nei-encore-frame img {
+        width: 100%;
+        height: 100%;
+        
+        object-fit: cover;
+        
+        position: absolute;
+        top: 0px;
+        left: 0px;
+          animation: playFrames 4s linear infinite 0s forwards;
+          animation-play-state: paused;	
+      }
+      
+      .nei-encore-frame:hover img{
+          animation-play-state: running;
+      }
+      
+      @keyframes playFrames {
+          0% { visibility: visible; z-index: 100; }
+          12.5% { visibility: visible; z-index: 100; }
+          25% { visibility: hidden; z-index: 0; }
+          100% { visibility: hidden; z-index: 0; }
+      }
+      
+      .nei-encore-frame img:nth-child(1){
+          z-index: 9;
+      }
+      .nei-encore-frame img:nth-child(2){
+          animation-delay: 1s;
+          z-index: 8;
+      }
+      .nei-encore-frame img:nth-child(3){
+          animation-delay: 2s;
+          z-index: 7;
+      }
+      .nei-encore-frame img:nth-child(4){
+          animation-delay: 3s;
+          z-index: 6;
+      }
+      
+      
+      
+      .nei-encore-description {
+        font-family: Avenir, Nunito Sans, Arial, sans-serif;
+        color: #525252;
+        height: 200px;
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      
+      .nei-encore-description .nei-encores-title {
+        font-size: 18px;
+
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2; 
+      }
+
+      .nei-encores-faculty {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1; 
+      }
+
+      .nei-encores-tags {
+        margin: 10px 0px 20px 0px;
+      }
+
+      span.nei-encores-tag {
+        color: #fff;
+        padding: 5px 15px;
+        border-radius: 20px;
+        font-weight: bold;
+        font-size: 12px;
+        margin-top: 5px;
+        display: INLINE-block;
+        width: fit-content;
+        white-space: nowrap;
+      }
+
+      .nei-encore-description .nei-encores-tags-congress {
+        background-color: #6D8E67;
+      }
+
+        .nei-encore-description .nei-encores-tags-congress::after {
+            content: 'Congress';
+        }
+
+    .nei-encore-description .nei-encores-tags-synapse {
+        background-color: #60BFBF;
+    }
+
+        .nei-encore-description .nei-encores-tags-synapse::after {
+            content: 'Synapse';
+        }
+
+    .nei-encore-description .nei-encores-tags-sml {
+        background-color: #003E8C;
+    }
+
+        .nei-encore-description .nei-encores-tags-sml::after {
+            content: 'Saturday Morning Live';
+        }
+
+    .nei-encore-description .nei-encores-tags-forensics {
+        background-color: #9C5A51;
+    }
+
+        .nei-encore-description .nei-encores-tags-forensics::after {
+            content: 'Forensics Psychiatry Academy';
+        }
+
+    .nei-encore-description .nei-encores-tags-child {
+        background-color: #4f85a6;
+    }
+
+        .nei-encore-description .nei-encores-tags-child::after {
+            content: 'Child & Adolescent Psychiatry Academy';
+        }
+    
+    .nei-encore-description .nei-encores-tags-precon {
+        background-color: #C08F5F;
+    }
+
+        .nei-encore-description .nei-encores-tags-precon::after {
+            content: 'Pre-Conference Workshop';
+        }
+        
+    
+    .nei-encore-lowerdesc {
+        display: flex;
+        align-items: center;
+    }
+
+    p.nei-encores-members_only {
+        margin-left: 20px;
+        font-weight: 800;
+        color: #2EA318;
+    }
+
+    .nei-encores-members_only::before {
+        display: inline-block;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        font: var(--fa-font-solid);
+        content: '\f005 ';
+    }
+
+    .nei-encores-members_only::after {
+        content: ' Members Only';
+    }
+     
+      .nei-encore-description a.nei-encores-get_started {
+        font-family: Avenir, Nunito Sans, Arial, sans-serif;
+        font-weight: bold;
+        background-color: #3E5672;
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        padding: 10px 20px;
+        text-decoration: none;
+        display: block;
+        width: fit-content;
+        white-space: nowrap;
+      }
+
+      @media (max-width: 1080px) {
+        .nei-encore-header {
+            justify-content: center;
+
+        }
+        .nei-encore-header .nei-encore-vps {
+            text-align: center;
+            padding-bottom: 20px;
+        }
+            .nei-encore-filterbtn {
+            opacity: 1;
+        }
+        .nei-encore-filters-hide {
+            display: none;
+        }
+        .nei-encore-overview {
+            flex-wrap: wrap;
+
+        }
+        .nei-encore-filters {
+            width: 100%;
+        
+            background-color: #F4F4F4;
+        }
+        .nei-encore-posters-container {
+            width: 100%;
+        }
+        .nei-encore-search {
+            width: 100%;
+
+        }
+      }
+
+
+    @media (max-width: 840px) {
+
+        .nei-encore-header .nei-encore-vps {
+            text-align: left;
+        }
+        .nei-encore-presentations-container {
+           width: 100%;
+    
+        }
+
+        .nei-encore-presentation-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 100%;
+          }
+
+
+          .nei-encore-frame {
+            height: 400px;
+            width: 100%;
+            min-width: unset;
+            position: relative;
+        }
+
+
+        .nei-encore-description {
+            font-family: Avenir, Nunito Sans, Arial, sans-serif;
+            color: #525252;
+            min-height: 200px;
+            height: fit-content;
+            width: 100%;
+            margin-left: 0px;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+          }
+    }
+
+    @media (max-width: 640px) {
+        .nei-encore-frame {
+            height: 350px;
+        }
+    }
+
+    @media (max-width: 640px) {
+        .nei-encore-frame {
+            height: 300px;
+        }
+    }
+
+    @media (max-width: 540px) {
+
+        .nei-encore-presentations-container {
+
+            padding: 10px 10px;
+    
+        }
+        .nei-encore-frame {
+            height: 250px;
+            width: 100%;
+            position: relative;
+        }
+
+
+
+        .nei-encore-description a {
+            text-align: center;
+            width: 100%;
+          }
+    }
+
+    @media (max-width: 440px) {
+        .nei-encore-frame {
+            height: 200px;
+        }
+        .nei-encore-header .nei-encore-vps {
+            font-size: 24px;
+        }
+
+    }
+	</style>
+</head>
+
+<body>
+	<div class="nei-encore-container">
+		<div class="nei-encore">
+			<div class="nei-encore-header-container">
+				<div class="nei-encore-header">
+					<div class="nei-encore-vps">
+						<img src="https://cdn.neiglobal.com/content/website/images/featured-activities-encore-240x240.png">Encore Presentations
+					</div>
+					<div class="nei-encore-search">
+						<input class="nei-encore-search_box" name="dnn$ctr2580$NEIVSPSummary$txtSearch" type="text" id="dnn_ctr2580_NEIVSPSummary_txtSearch">
+						<input class="nei-encore-search_submit" type="submit" value="Search">
+					</div>
+				</div>				 
+			</div>
+			<div class="nei-encore-overview-container">
+				<div class="nei-encore-sort">
+					<div class="nei-encore-filterbtn" id="nei-encore-filterbtn"><i class="fa-solid fa-filter-list"></i> Filters</div>
+					<div>							 
+						<select>
+							<option value="rbNtoO">Newest to oldest</option>
+							<option value="rbAbyT">Alphabetical by title</option>
+						  </select>                        
+					</div>
+				</div>
+				<div class="nei-encore-overview">
+					<div class="nei-encore-filters nei-encore-filters-hide" id="nei-encore-filters">
+						<div class="nei-encore-filter">
+							<b>Year</b>
+							<br>
+							<select class="nei-encore-filter-select">
+								<option>All</option>
+								<option>2022</option>
+								<option>2021</option>
+								<option>2020</option>
+								<option>2019</option>
+								<option>2018</option>
+								<option>2017</option>
+								<option>2016</option>
+								<option>2015</option>
+							</select>
+						</div>
+
+						<div class="nei-encore-filter">
+							<b>Meeting</b>
+							<br>
+							<select class="nei-encore-filter-select">
+								<option>All</option>
+								<option>NEI Congress</option>
+								<option>NEI Synapse</option>
+								<option>Saturday Morning Live</option>
+								<option>Forensics Psychiatry Academy</option>
+							</select>
+						</div>
+
+						<div class="nei-encore-filter">
+							<b>Topic</b>
+							<br>
+							<select class="nei-encore-filter-select">
+								<option>All</option>
+								<option>Depression</option>
+								<option>ADHD</option>
+								<option>Schizophrenia</option>
+							</select>
+						</div>
+
+						<div class="nei-encore-filter">
+							<b>Faculty</b>
+							<br>
+							<select class="nei-encore-filter-select">
+								<option>All</option>
+								<option>Stephen M. Stahl, MD, PhD, DSc (Hon.)</option>
+								<option>Andrew J. Cutler, MD</option>
+								<option>Roger S. McIntyre, MD, FRCPC</option>
+							</select>
+						</div>
+
+						<div class="nei-encore-filter">
+							<b>Access</b>
+							<br>
+							<input id="" type="checkbox" name=""><label>Open to Guests</label>
+						</div>
+
+						<div class="nei-encore-filter">
+							<b>CME Credit</b>
+							<br>
+							<input id="" type="checkbox" name=""><label>With Credit Only</label>
+							
+						</div>
+
+						<div class="nei-encore-filter">
+							<input type="submit" name="dnn$ctr2580$NEIVSPSummary$btnSubmit" value="Submit" id="dnn_ctr2580_NEIVSPSummary_btnSubmit" style="width:60px;">
+							<input type="submit" name="dnn$ctr2580$NEIVSPSummary$btnClear" value="Clear" id="dnn_ctr2580_NEIVSPSummary_btnClear" style="width:60px;">
+						</div>
+
+					</div>
+					<div class="nei-encore-presentations-container">
+						<div class="nei-encore-presentations">
+							<span>1000 Results</span>
+							<div class="nei-encore-presentation">
+								<div class="nei-encore-presentation-wrapper">
+									<div class="nei-encore-frame">
+									  <img src="https://cdn.neiglobal.com/content/website/images/mockup/encore-mockup-001.png">
+									  <img src="https://cdn.neiglobal.com/content/website/images/mockup/encore-mockup-002.png">
+									  <img src="https://cdn.neiglobal.com/content/website/images/mockup/encore-mockup-003.png">
+									  <img src="https://cdn.neiglobal.com/content/website/images/mockup/encore-mockup-004.png">
+									</div>
+									<div class="nei-encore-description"> 
+									  <div class="nei-encore-upperdesc">
+										<h2 class="nei-encores-title">Stimulating Conversation About Meth Use</h2>
+										<p>
+										  <span class="nei-encores-faculty">Andrew J Cutler, MD</span>
+										  
+										  <span class="nei-encores-credit">CME credit: 0.75</span>
+										</p>
+										
+										<div class="nei-encores-tags">
+											<span class="nei-encores-tag nei-encores-tags-synapse"></span> 
+										</div>
+										    
+									  </div>
+									  <div class="nei-encore-lowerdesc">
+										<a class="nei-encores-get_started">Get Started</a>
+										<p class="nei-encores-members_only"></p>
+									  </div>
+									</div>
+								</div>
+	
+							</div>
+							<div class="nei-encore-presentation">
+								<div class="nei-encore-presentation-wrapper">
+									<div class="nei-encore-frame">
+									  <img src="https://cdn.neiglobal.com/content/website/images/mockup/encore-mockup-001.png">
+									  <img src="https://cdn.neiglobal.com/content/website/images/mockup/encore-mockup-002.png">
+									  <img src="https://cdn.neiglobal.com/content/website/images/mockup/encore-mockup-003.png">
+									  <img src="https://cdn.neiglobal.com/content/website/images/mockup/encore-mockup-004.png">
+									</div>
+									<div class="nei-encore-description"> 
+									  <div class="nei-encore-upperdesc">
+										<h2 class="nei-encores-title">Just Rub Some Oil On It: The Efficacy of CBD and Hemp Products</h2>
+										<p>
+										  <span class="nei-encores-faculty">Andrew J Cutler, MD</span>
+										  
+										  <span class="nei-encores-credit">CME credit: 0.75</span>
+										</p>
+										
+										<div class="nei-encores-tags">
+											<span class="nei-encores-tag nei-encores-tags-sml"></span> 
+										</div>
+										    
+									  </div>
+									  <div class="nei-encore-lowerdesc">
+										<a class="nei-encores-get_started">Get Started</a>
+									  </div>
+									</div>
+								</div>
+	
+							</div>
+							<div class="nei-encore-presentation">
+								<div class="nei-encore-presentation-wrapper">
+									<div class="nei-encore-frame">
+									  <img src="https://cdn.neiglobal.com/content/website/images/mockup/encore-mockup-001.png">
+									  <img src="https://cdn.neiglobal.com/content/website/images/mockup/encore-mockup-002.png">
+									  <img src="https://cdn.neiglobal.com/content/website/images/mockup/encore-mockup-003.png">
+									  <img src="https://cdn.neiglobal.com/content/website/images/mockup/encore-mockup-004.png">
+									</div>
+									<div class="nei-encore-description"> 
+									  <div class="nei-encore-upperdesc">
+										<h2 class="nei-encores-title">Cannabis and Violence: From High to Homicidal</h2>
+										<p>
+										  <span class="nei-encores-faculty">Andrew J Cutler, MD</span>
+										  
+										  <span class="nei-encores-credit">CME credit: 0.75</span>
+										</p>
+										
+										<div class="nei-encores-tags">
+											<span class="nei-encores-tag nei-encores-tags-congress"></span> 
+											<span class="nei-encores-tag nei-encores-tags-child"></span> 
+										</div>
+										    
+									  </div>
+									  <div class="nei-encore-lowerdesc">
+										<a class="nei-encores-get_started">Get Started</a>
+									  </div>
+									</div>
+								</div>
+	
+							</div>
+
+							<div class="nei-encore-presentation">
+								<div class="nei-encore-presentation-wrapper">
+									<div class="nei-encore-frame">
+									  <img src="https://cdn.neiglobal.com/content/website/images/mockup/encore-mockup-001.png">
+									  <img src="https://cdn.neiglobal.com/content/website/images/mockup/encore-mockup-002.png">
+									  <img src="https://cdn.neiglobal.com/content/website/images/mockup/encore-mockup-003.png">
+									  <img src="https://cdn.neiglobal.com/content/website/images/mockup/encore-mockup-004.png">
+									</div>
+									<div class="nei-encore-description"> 
+									  <div class="nei-encore-upperdesc">
+										<h2 class="nei-encores-title">An Update on Psychedelics</h2>
+										<p>
+										   <span class="nei-encores-faculty">Kari L Franson, PharmD, PhD</span>
+										  
+										  <span class="nei-encores-credit">CME credit: 0.75</span>
+										</p>
+										<div class="nei-encores-tags">
+											<span class="nei-encores-tag nei-encores-tags-congress"></span> 
+											<span class="nei-encores-tag nei-encores-tags-forensics"></span> 
+										</div>  
+									  </div>
+									  <div class="nei-encore-lowerdesc">
+										<a class="nei-encores-get_started">Get Started</a>
+										<p class="nei-encores-members_only"></p>
+									  </div>
+									</div>
+								</div>
+							</div>
+
+							<div class="nei-encore-presentation">
+								<div class="nei-encore-presentation-wrapper">
+									<div class="nei-encore-frame">
+									  <img src="https://cdn.neiglobal.com/content/website/images/mockup/encore-mockup-001.png">
+									  <img src="https://cdn.neiglobal.com/content/website/images/mockup/encore-mockup-002.png">
+									  <img src="https://cdn.neiglobal.com/content/website/images/mockup/encore-mockup-003.png">
+									  <img src="https://cdn.neiglobal.com/content/website/images/mockup/encore-mockup-004.png">
+									</div>
+									<div class="nei-encore-description"> 
+										<div class="nei-encore-upperdesc">
+											<h2 class="nei-encores-title">Not Good Enough: What to Do When Standard Treatment for Depression Fails Not Good Enough: What to Do When Standard Treatment for Depression Not Good Enough: What to Do When Standard Treatment for Depression</h2>
+											<p>
+												<span class="nei-encores-faculty">Kari L Franson, PharmD, PhD</span>
+												
+												<span class="nei-encores-credit">CME credit: 0.75</span>
+											</p>
+
+											<div class="nei-encores-tags">
+												<span class="nei-encores-tag nei-encores-tags-congress"></span> 
+												<span class="nei-encores-tag nei-encores-tags-precon"></span> 
+											</div> 
+										</div>
+										<div class="nei-encore-lowerdesc">
+											<a class="nei-encores-get_started">Get Started</a>
+										</div>
+									</div>
+								</div>
+	
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<script>
+
+function toggleFilters(){
+    document.getElementById("nei-encore-filters").classList.toggle('nei-encore-filters-hide');
+}
+window.onload = function(){
+    document.getElementById("nei-encore-filterbtn").addEventListener( 'click', toggleFilters);
+}
+</script>
+
+</body>
+
+</html>

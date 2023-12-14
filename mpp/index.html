@@ -1,0 +1,1501 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>MPP Overview</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1"/>
+	<script src="https://kit.fontawesome.com/4e837a30ce.js" crossorigin="anonymous"></script>
+   <link href="https://cdn.neiglobal.com/content/include/css/nei-meetings.css" type="text/css" media="all" rel="stylesheet"/>
+   <link href="https://cdn.neiglobal.com/content/include/css/style.css" type="text/css" media="all" rel="stylesheet"/>
+
+  
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+.nei-body h1, .nei-body h2, .nei-body h3, .nei-body h4, .nei-body p, .nei-body ul, .nei-body ol, .nei-body a, .nei-body span, .nei-body mark, .nei-body th, .nei-body td, .nei-body tr, .nei-body thead, .nei-body label  {
+	font-family: 'Avenir', 'Nunito Sans', Arial, Helvetica, sans-serif;
+	color: #3D474D;
+	line-height: normal;
+	box-sizing: border-box;
+}
+
+.mpp--header {
+			background-color: #802102;
+			padding: 40px;
+			text-align: center;
+		}
+		.mpp--header img {
+			max-width: 600px;
+			width: 100%;
+			margin: 0 auto;
+		}
+
+		@media (max-width: 840px) {
+			.mpp--header {
+				padding: 20px 5px;
+			}
+		}
+
+        .mpp-become_a_member {
+			background-color: #802102;
+			background-image: url(https://cdn.neiglobal.com/content/website/images/membership-cta-bkg.png);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+			padding: 50px;
+			margin-top: 60px;
+			text-align: center;
+		}
+
+
+		.mpp-become_a_member h2, .mpp-become_a_member p {
+			color: #fff;
+		}
+
+		.mpp-become_a_member a.become_a_member{
+			background-color: #fff;
+			color: #6C2811;
+			margin: 30px auto;
+
+			font-family: Avenir, Avenir LT Pro, Nunito Sans, Arial, Helvetica, sans-serif;
+			font-weight: bold;
+			display: block;
+			padding: 12px 36px;
+			font-size: 16px;
+			border-radius: 5px;
+			text-decoration: none;
+			text-align: center;
+			width: fit-content;
+			min-width: 120px;
+			filter: drop-shadow(0 6px 4px rgba(93, 96, 109, 0.151));
+			transition: .2s;
+		}
+
+		.mpp-become_a_member img {
+			width: 100px;
+		}
+
+
+
+/*FAQ*/
+
+
+.mpp-faq {
+	max-width: 1080px;
+	margin: 0 auto;
+}
+
+.mpp-faq {
+	
+}
+
+.mpp-faq h2 {
+	margin-top: 20px;
+	padding: 20px 20px 0px 20px;
+}
+
+.mpp-faq ul.mpp-faq-links{
+	list-style: none;
+	padding: 0px 20px 20px 20px;
+}
+
+.mpp-faq ul.mpp-faq-links li {
+	padding-left: 0;
+	margin-left: 0;
+	background-color: #F5EFF0;
+	margin: 10px 0;
+	padding: 10px; 
+	
+}
+
+.mpp-faq ul.mpp-faq-links li .mpp-faq-question{
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 800;
+	color: #6C2811;
+
+}
+
+.mpp-faq p {
+	padding: 0px 20px 0px 20px;
+}
+
+
+
+.mpp-faq-question {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.mpp-faq .expandMoreContent {
+   max-height: 0px;
+   overflow: hidden;
+   transition: max-height 0.5s ease;
+   position: relative;
+
+}
+
+.mpp-faq .expandMoreContent.expand-active {
+   max-height: 800px;
+   transition: max-height 0.5s ease;
+}
+
+.mpp-faq .expandMoreHolder {
+   text-align: left;
+
+}
+
+.mpp-faq .btn-expand-more {
+    font-family: Avenir LT Pro, Avenir, Nunito Sans, Arial, sans-serif;
+   cursor: pointer;
+   padding: 6px 12px;
+   border-radius: 20px;
+   font-size: 24px;
+   font-style: normal;
+   font-weight: 600;
+
+   color: #C12E29;
+}
+
+
+
+
+
+/*Learning*/
+
+.mpp-learning--container {
+    max-width: 1430px;
+    margin: 0 auto;
+}
+
+.mpp-learning h2 {
+    color: #404b82;
+}
+
+.mpp-learning-intro {
+    padding: 20px;
+}
+
+.mpp-learning-filters {
+    
+    display: flex;
+
+}
+
+.mpp-learning-filters div {
+    display: flex;
+    align-items: center;
+}
+
+.mpp-learning-filters p.mpp-learning-filters-label {
+    font-weight: 800;
+    padding-right: 10px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.mpp-learning-filters .select {
+    margin-right: 50px;
+    padding: 5px;
+}
+
+.mpp-learning-filters {
+    padding-bottom: 20px; 
+}
+
+.mpp-learning-activities {
+    background-color: #fbf9fa;
+    margin: 20px;
+    padding: 20px;
+}
+
+
+
+.mpp-learning-activity{
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 2px 22px rgba(57, 18, 18, 0.057);
+    padding: 10px;
+    margin-bottom: 20px; 
+}
+
+.mpp-learning-activity .mpp-icon {
+    min-width: 100px;
+}
+
+.mpp-learning-activity .mpp-info h4 {
+    margin: 0;
+}
+
+.mpp-learning-activity .mpp-button {
+    min-width: 160px;
+    margin-left: auto;
+}
+
+.mpp-learning-activity .mpp-button a.get_started {
+    color: #fff;
+    font-style: normal;
+    text-decoration: none;
+    background-color: #404b82;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: block;
+    min-width: fit-content;
+    transition: .2s;
+    text-align: center;
+}
+
+.mpp-learning-activity .mpp-button a.get_started::before {
+    content: 'Get Started ';
+    font-family: "Avenir", "Nunito Sans", Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 18px;
+    color: #FFF;
+    text-rendering: optimizeLegibility;
+}
+
+.mpp-learning-activity .mpp-button a.get_started::after {
+    content: '\f138';
+    font-family: "Font Awesome 6 Pro", "Avenir", "Nunito Sans", Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 18px;
+    color: #FFF;
+    text-rendering: optimizeLegibility;
+}
+
+@media (max-width: 640px) {
+    .mpp-learning-activities {
+        background-color: #F5EFF0;
+        margin: 10px;
+        padding: 10px;
+    }
+    .mpp-learning-activity{
+        display: flex;
+        flex-direction: column;
+    }
+    .mpp-learning-activity .mpp-icon {
+    min-width: 100px;
+    padding: 20px;
+}
+
+.mpp-learning-activity .mpp-info  {
+    width: 100%;
+    text-align: center;
+}
+
+.mpp-learning-activity .mpp-button {
+    min-width: unset;
+    margin: 0 auto;
+    text-align: center;
+    margin: 10px;
+}
+.mpp-learning-filters {
+    display: flex;
+    flex-direction: column;
+}
+.mpp-learning-filters div {
+    margin-top: 10px;
+}
+.mpp-learning-filters label {
+    font-weight: 800;
+    padding-right: 10px;
+    
+}
+
+.mpp-learning-filters .select {
+    margin-right: 0px;
+    padding: 5px;
+    width: 100%;
+}
+
+}
+
+
+/*oVERVIEW*/
+
+.mpp-overview--header {
+    background-color: #802102;
+    padding: 40px;
+    text-align: center;
+}
+.mpp-overview--header img {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+}
+.mpp-overview--header h4 {
+    font-weight: 300;
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+.mpp-overview--header a.access_program {
+    background-color: #fff;
+    color: #6C2811;
+    margin: 30px auto;
+
+    font-family: Avenir, Avenir LT Pro, Nunito Sans, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    display: block;
+    padding: 12px 36px;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    width: fit-content;
+    min-width: 120px;
+    filter: drop-shadow(0 6px 4px rgba(93, 96, 109, 0.151));
+    transition: .2s;
+}
+.mpp-overview--header a.access_program:hover {
+    background-color: #f3eaea;
+    color: #6C2811;
+    margin: 30px auto;
+
+    font-family: Avenir, Avenir LT Pro, Nunito Sans, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    display: block;
+    padding: 12px 36px;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    width: fit-content;
+    min-width: 120px;
+    filter: drop-shadow(0 6px 4px rgba(93, 96, 109, 0.151));
+    transition: .2s;
+}
+.mpp-overview--header p, .mpp-overview--header a, .mpp-overview--header a:hover {
+    color: #fff;
+    text-align: center;
+
+}
+
+.mpp-overview--header a, .mpp-overview--header a:hover {
+    text-decoration: underline;
+}
+
+.mpp-overview--overview {
+    
+    text-align: center;
+}
+.mpp-overview--overview p {
+    color: #1b1513;
+    text-align: center;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+.mpp-overview--overview h2 {
+    color: #1b1513;
+    text-align: center;
+    max-width: 1080px;
+    margin: 10px auto;
+}
+
+.mpp-overview--intro {
+    background-color: #faf8f7;
+}
+.mpp-overview--steps {
+    padding: 40px;
+    background-color: #faf8f7;
+}
+
+@media (max-width: 640px) {
+    .mpp-overview--intro {
+    padding: 10px;
+}
+
+}
+.mpp-overview--steps h2 {
+    color: #1b1513;
+    text-align: center;
+    max-width: 540px;
+    margin: 0 auto;
+}
+.mpp-overview--steps--container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1080px;
+    margin: 40px auto;
+}
+.mpp-overview--steps .mpp-overview--step {
+    width: 30%;
+    text-align: center;
+}
+
+
+.mpp-overview--steps .mpp-overview--step-number i{
+    font-size: 84px;
+    padding-bottom: 20px;
+    color: #404b82;
+}
+@media (max-width: 640px) {
+    .mpp-overview--steps--container {
+        flex-wrap: wrap;
+        
+    }
+    .mpp-overview--steps .mpp-overview--step {
+        width: 100%;
+        text-align: center;
+        padding-top: 20px;
+    }
+}
+
+.mpp-overview--cert {
+    margin: 0px auto 60px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://cdn.neiglobal.com/content/website/images/mpp_certificate_template_bkg.png);
+    background-position: center bottom;
+    background-size: cover;
+}
+
+.mpp-overview--cert img{
+    width: 70px;
+    height: fit-content;
+    height: intrinsic;
+    padding: 20px;
+}
+
+.mpp-overview--cert .cert {
+    max-width: 600px;
+    width: 100%;
+}
+
+.mpp-overview--cert .cert img {
+    width: 100%;
+    padding: 0px;
+    box-shadow: 0 2px 22px rgba(57, 18, 18, 0.057);
+}
+
+.mpp-10_core_areas {
+    width: 100%;
+}
+
+.mpp-10_core_areas--container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1430px;
+    margin: 0 auto;
+}	
+.mpp-10_core_areas a.mpp-10_core_areas--area{
+    
+    padding: 10px;
+    background-color: #faf8f7;
+    height: 230px;
+    width: 230px;
+    margin: 20px;
+    text-decoration: none;
+    color: #1b1513;
+    border-radius: 5px;
+}
+.mpp-10_core_areas a.mpp-10_core_areas--area:hover {
+    padding: 10px;
+    background-color: #f6efec;
+    height: 230px;
+    width: 230px;
+    margin: 20px;
+    text-decoration: none;
+    color: #1b1513;
+    border-radius: 5px;
+}
+
+.mpp-10_core_areas a.mpp-10_core_areas--area p {
+    color: #1b1513;
+    font-weight: 600;
+}
+.mpp-10_core_areas a.mpp-10_core_areas--area img {
+    width: 60%;
+    padding: 20px;
+}
+
+@media (max-width: 640px) {
+    .mpp-10_core_areas a.mpp-10_core_areas--area{
+        height: 160px;
+        width: 160px;
+        margin: 5px;
+    }
+    .mpp-10_core_areas a.mpp-10_core_areas--area:hover {
+        height: 160px;
+        width: 160px;
+        margin: 5px;
+    }
+    .mpp-10_core_areas a.mpp-10_core_areas--area img {
+        width: 60%;
+        padding: 10px;
+    }
+    .mpp-10_core_areas a.mpp-10_core_areas--area p {
+        font-size: 12px;
+    }
+}
+
+
+/*Proctor Pass*/
+
+
+.mpp-proctorpass {
+    text-align: center;
+    padding: 10px;
+}
+.mpp-proctorpass p {
+    max-width: 1080px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.mpp-proctorpass h1 {
+    margin: 0;
+    padding-bottom: 20px;
+    color: #802102;
+}
+
+.mpp-proctorpass--noaccess {
+margin: 80px;
+}
+
+.mpp-proctorpass--noaccess div{
+background-color: #e9e9e9;
+padding: 40px;
+box-shadow: 0 2px 22px rgba(128, 106, 106, 0.083);		
+max-width: 700px;
+margin: 0 auto;
+border-radius: 5px;
+}
+
+.mpp-proctorpass--noaccess div h2 {
+margin: 0;
+padding-bottom: 20px;
+
+}
+
+.mpp-proctorpass--video {
+padding: 50px 0;
+text-align: center;
+}
+
+.mpp-proctorpass--video iframe {
+border-radius: 15px; 
+overflow: hidden;
+filter: drop-shadow(0 6px 4px rgba(11, 11, 13, 0.129));
+height: 400px;
+width: 600px;
+margin: 0 auto;
+}
+
+
+@media (max-width: 840px) {
+.mpp-proctorpass--noaccess {
+margin: 40px;
+}
+.mpp-proctorpass--video iframe {
+    height: 400px;
+    width: 100%;
+}
+}
+
+
+/*Prog Summary*/
+
+
+.mpp-progress_summary {
+	background-color: #fbf9fa;
+}
+
+.mpp-progress_summary--containter {
+	max-width: 2160px;
+	margin: 0 auto;
+}
+
+
+.mpp-progress_summary--summary {
+	width: 100%;
+	display: flex;
+	padding: 10px;
+}
+
+
+
+.mpp-progress_summary--summary-text {
+	width: 40%;
+	margin: 10px;
+}
+
+.mpp-progress_summary--summary-graphic {
+	width: 60%;
+	background-color: #fff;
+	box-shadow: 0 2px 22px rgba(209, 154, 154, 0.057);
+	border-radius: 5px;
+	margin: 10px;
+	padding: 50px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+@media (max-width: 1280px) { 
+	.mpp-progress_summary--summary {
+		flex-wrap: wrap;
+	}
+
+	.mpp-progress_summary--summary-text {
+		width: 100%;
+	}
+
+	.mpp-progress_summary--summary-graphic {
+		width: 100%;
+	}
+}
+
+
+.mpp-progress_summary--summary-graphic a {
+	color: #280909;
+	font-style: normal;
+	text-decoration: none;
+	font-weight: 800;
+	font-size: 16px;
+	background-color: #F0E2E5;
+	padding: 10px;
+	border-radius: 5px;
+	display: block;
+	width: fit-content;
+	margin: 10px auto;
+	transition: .2s;
+}
+
+.mpp-progress_summary--summary-graphic a:hover {
+	color: #280909;
+	font-style: normal;
+	text-decoration: none;
+	font-weight: 800;
+	font-size: 16px;
+	background-color: #edcccc;
+	padding: 10px;
+	border-radius: 5px;
+	display: block;
+	margin: 10px auto;
+	width: fit-content;
+	
+}
+
+.mpp-progress_summary--summary-graphic--container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 30px;
+}
+
+
+
+.mpp-progress_summary--summary-graphic--sa {
+	text-align: center;
+}
+
+.mpp-progress_summary--summary-graphic--sa h4, .mpp-progress_summary--summary-graphic--sa p, .mpp-progress_summary--summary-graphic--sa span {
+	color: #d2121c;
+	font-size: 18px;
+	font-weight: 800;
+}
+
+.mpp-progress_summary--summary-graphic--la {
+	text-align: center;
+}
+
+.mpp-progress_summary--summary-graphic--la h4, .mpp-progress_summary--summary-graphic--la p, .mpp-progress_summary--summary-graphic--la span {
+	color: #404b82;
+	font-size: 18px;
+	font-weight: 800;
+}
+
+.piechart--chart--wrapper {
+	position: relative;
+	margin: 0 40px;
+	width: 200px;
+	height: 200px;
+}
+
+
+@media (max-width: 640px) {
+	.mpp-progress_summary--summary-graphic {
+
+		margin: 0px;
+		padding: 20px;
+	}
+	.mpp-progress_summary--summary-graphic--container {
+		display: flex;
+		flex-direction: column;
+		padding-bottom: 20px;
+	}
+	.piechart--chart--wrapper {
+		margin: 20px;
+	}
+}
+
+.piechart--chart {
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	background-color: #f6f6f6;
+	border-radius: 50%;
+}
+
+.piechart--total_number {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	background-color: #fff;
+	height: 160px;
+	width: 160px;
+	border-radius: 50%;
+}
+
+.piechart--total_number h1 {
+	line-height: 160px;
+	text-align: center;
+}
+
+.piechart--total_number h1, .piechart--total_number span {
+	margin: 0; 
+	color: #280909;
+	font-size: 40px;
+}
+
+.piechart--sa_number h4, .piechart--sa_number span, 
+.piechart--la_number h4, .piechart--la_number span {
+	font-size: 24px;
+	margin: 0;
+}
+
+.mpp-progress_summary--progress {
+	display: flex;
+}
+
+
+.mpp-progress_summary--progress--sa, .mpp-progress_summary--progress--la {
+	background-color: #fff;
+	box-shadow: 0 2px 22px rgba(209, 154, 154, 0.057);
+	border-radius: 5px;
+	margin: 20px;
+	width: 50%;
+	padding: 20px;
+	height: fit-content;
+}
+
+@media (max-width: 1280px) {
+	.mpp-progress_summary--progress {
+		flex-wrap: wrap;
+	}
+	.mpp-progress_summary--progress--sa, .mpp-progress_summary--progress--la {
+		width: 100%;
+		margin: 0px 10px 10px 10px;
+	}
+}
+
+.mpp-progress_summary--table table {
+	width: 100%;
+	font-size: 14px;
+
+	border-collapse: separate;
+    border-spacing: 0 1em;
+}
+
+.mpp-progress_summary--table table a {
+	color: #403535;
+	font-weight: 500;
+	text-decoration: none;
+}
+.mpp-progress_summary--table table a:hover {
+	color: #403535;
+	font-weight: 500;
+	text-decoration: none;
+}
+
+@media (max-width: 640px) {
+	.mpp-progress_summary--table table {
+	width: 100%;
+	font-size: 12px;
+}
+}
+
+@media (max-width: 400px) {
+	.mpp-progress_summary--table table {
+		width: 100%;
+		font-size: 11px;
+	}
+}
+
+.mpp-progress_summary--table table img {
+	max-width: 30px;
+}
+
+.mpp-progress_summary--progress .title--wrapper {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.mpp-progress_summary--progress .title--wrapper h3 {
+	margin: 0;
+}
+
+.mpp-progress_summary--progress .title--wrapper a {
+	color: #280909;
+	font-style: normal;
+	text-decoration: none;
+	font-weight: 800;
+	font-size: 16px;
+	background-color: #F0E2E5;
+	padding: 10px;
+	border-radius: 5px;
+	display: block;
+	width: fit-content;
+	transition: .2s;
+}
+
+.mpp-progress_summary--progress .title--wrapper a:hover {
+	color: #280909;
+	font-style: normal;
+	text-decoration: none;
+	font-weight: 800;
+	font-size: 16px;
+	background-color: #edcccc;
+	padding: 10px;
+	border-radius: 5px;
+	display: block;
+
+	width: fit-content;
+}
+
+.mpp-progress_summary--progress .bar--wrapper {
+	display: flex;
+	align-items: center;
+	padding: 10px 0;
+}
+
+.mpp-progress_summary--progress .bar--wrapper .sa-progress, .mpp-progress_summary--progress .bar--wrapper .la-progress {
+	width: 90%;
+	height: 25px;
+	background-color: #f6f6f6;
+	border-radius: 5px;
+	margin-right: 20px;
+}
+
+.mpp-progress_summary--progress .bar--wrapper .sa-progress .sa-progress-bar {
+	background-color: #d2121c;
+	height: 25px;
+	border-radius: 5px;
+}
+
+.mpp-progress_summary--progress .bar--wrapper .la-progress .la-progress-bar {
+	background-color: #404b82;
+	height: 25px;
+	border-radius: 5px;
+}
+
+.mpp-progress_summary--progress .bar--wrapper h3 {
+	text-align: center;
+	width: 10%;
+}
+
+@media (max-width: 640px) {
+	
+}
+
+.mpp-progress_summary--text {
+	padding: 20px;
+	max-width: 2160px;
+	margin: 0 auto;
+}
+
+.mpp-progress_summary--text p{
+	font-size: 14px;
+}
+
+.mpp-progress_summary--text a{
+	font-size: 14px;
+	color: #d2121c;
+}
+
+.mpp-progress_summary--text a:hover{
+	font-size: 14px;
+	color: #a2141b;
+}
+
+h2.access-to-exam {
+	margin: 0;
+
+}
+
+h2.access-to-exam span {
+	color: #ffc400;
+}
+
+
+h2.exam-results {
+	margin: 0;
+}
+
+h2.exam-result--passed, h2.exam-result--passed span {
+	margin: 0;
+	color: #11612a;
+}
+
+.exam-passed--buttons {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 10px;
+}
+
+
+.exam-passed--buttons a{
+	margin: 10px;
+}
+
+.exam-passed--buttons a:hover {
+	margin: 10px;
+}
+
+h2.exam-results {
+	margin: 0;
+}
+
+h2.exam-result--notpassed, h2.exam-result--notpassed span {
+	margin: 0;
+	color: #2d312e;
+}
+
+.exam-passed--buttons {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 10px;
+}
+
+
+.exam-passed--buttons a{
+	margin: 10px;
+}
+
+.exam-passed--buttons a:hover {
+	margin: 10px;
+}
+
+
+/*Self Assessment*/
+.mpp-self_assessment--container {
+    max-width: 1430px;
+    margin: 0 auto;
+}
+
+.mpp-self_assessment h2 {
+    color: #C12E29;
+}
+
+.mpp-self_assessment-intro {
+    padding: 20px;
+}
+
+
+
+
+
+.mpp-self_assessment-intro .expandMoreContent {
+max-height: 0px;
+overflow: hidden;
+transition: max-height 0.5s ease;
+position: relative;
+
+}
+
+.mpp-self_assessment-intro .expandMoreContent.expand-active {
+max-height: 5000px;
+transition: max-height 0.5s ease;
+}
+
+.mpp-self_assessment-intro .expandMoreHolder {
+text-align: left;
+padding-top: 20px;
+}
+
+.mpp-self_assessment-intro .btn-expand-more {
+font-family: Avenir LT Pro, Avenir, Nunito Sans, Arial, sans-serif;
+cursor: pointer;
+padding: 6px 12px;
+border-radius: 20px;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+display: inline-block;
+border: 2px solid #C12E29;
+color: #C12E29;
+}
+
+
+
+
+
+
+
+
+.mpp-self_assessment-filters {
+    display: flex;
+
+}
+
+.mpp-self_assessment-filters label {
+    font-weight: 800;
+    padding-right: 10px;
+}
+
+.mpp-self_assessment-filters select {
+    margin-right: 50px;
+}
+
+.mpp-self_assessment-filters {
+    padding-bottom: 20px; 
+}
+
+.mpp-self_assessment-activities {
+    background-color: #F5EFF0;
+    margin: 20px;
+    padding: 20px;
+}
+
+
+
+.mpp-self_assessment-activity{
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 20px; 
+}
+
+.mpp-self_assessment-activity .mpp-icon {
+    min-width: 100px;
+    max-width: 100px;
+    padding: 20px ;
+}
+.mpp-self_assessment-activity .mpp-icon img{
+    width: 100%;
+}
+
+.mpp-self_assessment-activity .mpp-info h4 {
+    margin: 0;
+}
+
+.mpp-self_assessment-activity .mpp-button {
+    min-width: 180px;
+    margin-left: auto;
+}
+
+.mpp-self_assessment-activity .mpp-button a {
+    width: 160px;
+    display: block;
+}
+
+.mpp-self_assessment-activity .mpp-button a.get_started {
+    color: #fff;
+    font-style: normal;
+    text-decoration: none;
+    background-color: #C12E29;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: block;
+    min-width: fit-content;
+    transition: .2s;
+    text-align: center;
+}
+
+.mpp-self_assessment-activity .mpp-button a.get_started::before {
+    content: 'Get Started ';
+    font-family: "Avenir", "Nunito Sans", Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 18px;
+    color: #FFF;
+    text-rendering: optimizeLegibility;
+}
+
+.mpp-self_assessment-activity .mpp-button a.get_started::after {
+    content: '\f138';
+    font-family: "Font Awesome 6 Pro", "Avenir", "Nunito Sans", Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 18px;
+    color: #FFF;
+    text-rendering: optimizeLegibility;
+}
+
+.mpp-self_assessment-activity .mpp-button a.resume {
+    color: #fff;
+    font-style: normal;
+    text-decoration: none;
+    background-color: #C12E29;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: block;
+    min-width: fit-content;
+
+    transition: .2s;
+    text-align: center;
+}
+
+.mpp-self_assessment-activity .mpp-button a.resume::before {
+    content: 'Resume ';
+    font-family: "Avenir", "Nunito Sans", Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 18px;
+    color: #FFF;
+}
+.mpp-self_assessment-activity .mpp-button a.resume::after {
+    content: '\f138';
+    font-family: "Font Awesome 6 Pro", "Avenir", "Nunito Sans", Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 18px;
+    color: #FFF;
+}
+
+.mpp-self_assessment-activity .mpp-button a.passed {
+    color: #3e8d13;
+    font-style: normal;
+    text-decoration: none;
+
+    display: block;
+    margin: 10px 0;
+    text-align: center;
+
+}
+
+.mpp-self_assessment-activity .mpp-button a.passed::before {
+    content: 'Passed ';
+    font-family: "Avenir", "Nunito Sans", Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-weight: 900;
+    width: 100px;
+    font-size: 18px;
+    color: #3e8d13;
+}
+.mpp-self_assessment-activity .mpp-button a.passed::after {
+    content: '\f058';
+    font-family: "Font Awesome 6 Pro", "Avenir", "Nunito Sans", Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-weight: 900;
+    width: 100px;
+    font-size: 18px;
+    color: #3e8d13;
+}
+
+.mpp-self_assessment-activity .mpp-button a.notpassed {
+    color: #444644;
+    font-style: normal;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 16px;
+
+    display: block;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.mpp-self_assessment-activity .mpp-button a.notpassed::before {
+    content: 'Not Passed';
+    font-family: "Font Awesome 5 Free", "Avenir", "Nunito Sans", Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-weight: 900;
+    width: 100px;
+    font-size: 18px;
+    color: #444644;
+}
+
+.mpp-self_assessment-activity .mpp-button a.link {
+    color: #444644;
+    font-size: 12px;
+    padding-bottom: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    text-align: center;
+}
+
+@media (max-width: 640px) {
+    .mpp-self_assessment-activities {
+        background-color: #F5EFF0;
+        margin: 10px;
+        padding: 10px;
+    }
+    .mpp-self_assessment-activity{
+        display: flex;
+        flex-direction: column;
+    }
+    .mpp-self_assessment-activity .mpp-icon {
+    min-width: 100px;
+    padding: 20px;
+}
+.mpp-self_assessment-activity .mpp-info  {
+    width: 100%;
+    text-align: center;
+}
+
+.mpp-self_assessment-activity .mpp-button {
+    min-width: unset;
+    margin: 0 auto;
+    text-align: center;
+    margin: 10px;
+}
+.mpp-self_assessment-activity .mpp-button a.passed {
+    text-align: center;
+
+}
+
+.mpp-self_assessment-activity .mpp-button a.notpassed {
+
+    text-align: center;
+}
+}
+
+
+/*Study Guides*/
+
+.mpp-program_guides {
+    text-align: center;
+}
+.mpp-program_guides p {
+    max-width: 1080px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.mpp-10_core_areas {
+    width: 100%;
+}
+
+.mpp-10_core_areas--container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1430px;
+    margin: 0 auto;
+}	
+.mpp-10_core_areas a.mpp-10_core_areas--area{
+    
+    padding: 10px;
+    background-color: #faf8f7;
+    height: 230px;
+    width: 230px;
+    margin: 20px;
+    text-decoration: none;
+    color: #1b1513;
+    border-radius: 5px;
+}
+.mpp-10_core_areas a.mpp-10_core_areas--area:hover {
+    padding: 10px;
+    background-color: #f6efec;
+    height: 230px;
+    width: 230px;
+    margin: 20px;
+    text-decoration: none;
+    color: #1b1513;
+    border-radius: 5px;
+}
+
+.mpp-10_core_areas a.mpp-10_core_areas--area p {
+    color: #1b1513;
+}
+.mpp-10_core_areas a.mpp-10_core_areas--area img {
+    width: 60%;
+    padding: 20px;
+}
+
+@media (max-width: 640px) {
+    .mpp-10_core_areas a.mpp-10_core_areas--area{
+        height: 160px;
+        width: 160px;
+        margin: 5px;
+    }
+    .mpp-10_core_areas a.mpp-10_core_areas--area:hover {
+        height: 160px;
+        width: 160px;
+        margin: 5px;
+    }
+    .mpp-10_core_areas a.mpp-10_core_areas--area img {
+        width: 60%;
+        padding: 10px;
+    }
+    .mpp-10_core_areas a.mpp-10_core_areas--area p {
+        font-size: 12px;
+    }
+}
+
+.mpp-become_a_member {
+    background-color: #802102;
+    background-image: url(https://cdn.neiglobal.com/content/website/images/membership-cta-bkg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 50px;
+    margin-top: 60px;
+    text-align: center;
+}
+
+
+.mpp-become_a_member h2, .mpp-become_a_member p {
+    color: #fff;
+}
+
+.mpp-become_a_member a.become_a_member{
+    background-color: #fff;
+    color: #6C2811;
+    margin: 30px auto;
+
+    font-family: Avenir, Avenir LT Pro, Nunito Sans, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    display: block;
+    padding: 12px 36px;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    width: fit-content;
+    min-width: 120px;
+    filter: drop-shadow(0 6px 4px rgba(93, 96, 109, 0.151));
+    transition: .2s;
+}
+
+.mpp-become_a_member img {
+    width: 100px;
+}
+    </style>
+</head>
+
+<body>
+
+	<div class="nei-body">
+			<div style="background-image: url(https://cdn.neiglobal.com/content/website/images/mpp-overview-header-bkg.png); background-size: cover; background-position: center; position: absolute; top: 0; width: 100%; height: 100%; pointer-events: none;"></div>
+			<div class="mpp-overview--header">
+				<img src="https://cdn.neiglobal.com/content/website/images/mpp-header-white-1800x450.png">
+				<h4><br>Join the distinguished list of mental health professionals who have earned the <strong>Master Psychopharmacology Program </strong>certificate!</h4> 
+				<a href="#" class="access_program">Access Program</a>
+				<p><em>A Membership feature designed to help you refine your skills in the practice of psychopharmacology </em>
+					<br><br>
+					<a href="https://google.com" target="_blank">I’m not a member – tell me about pricing</a> 
+				</p>
+			</div>
+			<div class="mpp-overview--overview">
+				 <div class="mpp-overview--intro">
+					<br><br><br>
+					<h2>What is the Master Psychopharmacology Program?</h2>
+					<p>
+						An online, self-paced, assessment-based certificate program designed to help healthcare professionals hone their skills in the practice of psychopharmacology. Complete the program and earn up to 28 CME credits and 16 MOC self-assessment credits. </p>
+						<br><br>
+					</div>
+				<div class="mpp-overview--steps">
+					<h2>How to Earn the Master Psychopharmacology Program Certificate </h2>
+					<div class="mpp-overview--steps--container">
+						<div class="mpp-overview--step">
+							<div class="mpp-overview--step-number"><i class="fa-sharp fa-regular fa-circle-1"></i></div>
+							<p><Strong>Complete 10 Self-Assessments </Strong>
+								<br>
+								(based on your results, we’ll give you a personalized list of Recommended Resources to review) 
+							</p>
+						</div>
+						<div class="mpp-overview--step">
+							<div class="mpp-overview--step-number"><i class="fa-sharp fa-regular fa-circle-2"></i></div>
+							<p><strong>Complete 24 Learning Activities </strong>
+								<br>
+								(use your Recommended Resources to select which activities to complete) 
+							</p>
+						</div>
+						<div class="mpp-overview--step">
+							<div class="mpp-overview--step-number"><i class="fa-sharp fa-regular fa-circle-3"></i></div>
+							<p><strong>Pass the Final Exam</strong> 
+								<br>
+								(score of 75% or higher) </p>
+						</div>						
+					</div>
+
+				</div>
+				<div class="mpp-overview--cert">
+					<img src="https://cdn.neiglobal.com/content/website/images/mpp_certificate_emphasis_l.png">
+					<div class="cert">
+						<img src="https://cdn.neiglobal.com/content/website/images/mpp_certificate_template.png">
+					</div>
+					<img src="https://cdn.neiglobal.com/content/website/images/mpp_certificate_emphasis_r.png">
+				</div>
+				<div class="mpp-10_core_areas">
+					<h2>Ten Core Areas/Self-Assessment Topics</h2>
+					<div class="mpp-10_core_areas--container">
+						<a class="mpp-10_core_areas--area" href="https://cdn.neiglobal.com/content/mpp/studyguide/studyguide_basicneuro.pdf" target="_blank">
+							<img src="https://cdn.neiglobal.com/content/website/images/icons/therapeutic_basic_neuro-icon-400x400.png">
+							<p>Basic Neuroscience and Pharmacological Concepts</p>
+						</a>
+						<a class="mpp-10_core_areas--area" href="https://cdn.neiglobal.com/content/mpp/studyguide/studyguide_adhd.pdf" target="_blank">
+							<img src="https://cdn.neiglobal.com/content/website/images/icons/therapeutic_adhd-icon-400x400.png">
+							<p>ADHD and Its Treatment</p>
+						</a>
+						<a class="mpp-10_core_areas--area" href="https://cdn.neiglobal.com/content/mpp/studyguide/studyguide_anxiety.pdf" target="_blank">
+							<img src="https://cdn.neiglobal.com/content/website/images/icons/therapeutic_anxiety_stress-icon-400x400.png">
+							<p>Anxiety/Stress Disorders and Their Treatment</p>
+						</a>
+						<a class="mpp-10_core_areas--area" href="https://cdn.neiglobal.com/content/mpp/studyguide/studyguide_bipolar.pdf" target="_blank">
+							<img src="https://cdn.neiglobal.com/content/website/images/icons/therapeutic_bipolar-icon-400x400.png">
+							<p>Bipolar Disorder and Its Treatment</p>
+						</a>
+						<a class="mpp-10_core_areas--area" href="https://cdn.neiglobal.com/content/mpp/studyguide/studyguide_pain.pdf" target="_blank">
+							<img src="https://cdn.neiglobal.com/content/website/images/icons/therapeutic_neuropathic_pain-icon-400x400.png">
+							<p>Chronic Neuropathic Pain and Its Treatment</p>
+						</a>
+						<a class="mpp-10_core_areas--area" href="https://cdn.neiglobal.com/content/mpp/studyguide/studyguide_dementia.pdf" target="_blank">
+							<img src="https://cdn.neiglobal.com/content/website/images/icons/therapeutic_dementia-icon-400x400.png">
+							<p>Dementia and Its Treatment</p>
+						</a>
+						<a class="mpp-10_core_areas--area" href="https://cdn.neiglobal.com/content/mpp/studyguide/studyguide_psychosis.pdf" target="_blank">
+							<img src="https://cdn.neiglobal.com/content/website/images/icons/therapeutic_psychosis-icon-400x400.png">
+							<p>Psychosis and Its Treatment</p>
+						</a>
+						<a class="mpp-10_core_areas--area" href="https://cdn.neiglobal.com/content/mpp/studyguide/studyguide_sleep.pdf" target="_blank">
+							<img src="https://cdn.neiglobal.com/content/website/images/icons/therapeutic_sleep_wake-icon-400x400.png">
+							<p>Sleep/Wake Disorders and Their Treatment</p>
+						</a>
+						<a class="mpp-10_core_areas--area" href="https://cdn.neiglobal.com/content/mpp/studyguide/studyguide_sud.pdf" target="_blank">
+							<img src="https://cdn.neiglobal.com/content/website/images/icons/therapeutic_substance_abuse-icon-400x400.png">
+							<p>Substance Use/Impulsive-Compulsive Disorders and Their Treatment</p>
+						</a>
+						<a class="mpp-10_core_areas--area" href="https://cdn.neiglobal.com/content/mpp/studyguide/studyguide_unipolar.pdf" target="_blank">
+							<img src="https://cdn.neiglobal.com/content/website/images/icons/therapeutic_depression-icon-400x400.png">
+							<p>Unipolar Depression and Its Treatment</p>
+						</a>
+
+					</div>
+				</div>
+				<div class="mpp-become_a_member">
+					<h2>The Master Psychopharmacology Program is included with NEI Membership.</h2>
+					<p>Not a member? Join today and get instant access</p>
+					<a href="#" class="become_a_member">Become a Member</a>
+					<img src="https://cdn.neiglobal.com/content/website/images/membership-cta-emphasis--bottom.png">
+				</div>
+			</div>
+
+	
+
+	</div>
+
+</body>
+</html>
