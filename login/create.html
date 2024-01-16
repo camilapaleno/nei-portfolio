@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/4e837a30ce.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.neiglobal.com/content/include/css/style.css">
+    <link rel="stylesheet" href="create.css">
+
+    <title>NEI Create Account</title>
+    <style>
+        /*Account Forms (Log In, Create Account)*/
+
+.account-screen h1,
+.account-screen h2,
+.account-screen h3,
+.account-screen h4,
+.account-screen p,
+.account-screen a,
+.account-screen span,
+.account-screen label {
+    font-family: Avenir LT Pro, Avenir, Nunito Sans, Arial, Helvetica, sans-serif;
+}
+
+.account-screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--white-3);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1004;
+}
+
+.account-screen-create h1,
+.account-screen-create h2,
+.account-screen-create h3,
+.account-screen-create h4,
+.account-screen-create p,
+.account-screen-create a,
+.account-screen-create span,
+.account-screen-create label {
+    font-family: Avenir LT Pro, Avenir, Nunito Sans, Arial, Helvetica, sans-serif;
+}
+
+.account-screen-create {
+    position: absolute;
+    background-color: var(--white-3);
+    width: 100%;
+    height: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1004;
+}
+
+.account-screen-create a {
+    color: var(--nei-orange-hover);
+}
+
+.account-screen-logo {
+    position: absolute;
+    top: 0;
+    padding: 30px;
+}
+.account-screen-logo img {
+    width: 240px;
+}
+
+.account-screen-exit {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 30px;
+}
+
+.account-screen-exit i {
+    font-size: 30px;
+    color: var(--white-4);
+}
+
+.account-screen-footer {
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    color: var(--darkgrey-1);
+    text-align: center;
+    font-size: 12px;
+}
+
+/*Log In Form*/
+
+.log-in-wrapper {
+    background-color: #fff;
+    z-index: 1002;
+    border-radius: 5px;
+    width: 450px;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.log-in {
+    display: flex;
+    width: 300px;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.log-in a {
+    color: var(--nei-orange-hover);
+}
+
+.log-in h2, .log-in p, .log-in span, .log-in label {
+    color: var(--darkgrey-3);
+}
+
+.log-in-header {
+    width: 100%;
+}
+
+
+
+.log-in-btn {
+  width: 100%;
+  text-align: center;
+}
+
+.log-in-btn{
+  color: #FFF;
+  font-family: Avenir LT Pro, Avenir, Nunito Sans, Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  display: block;
+  width: 100%;
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--nei-orange);
+  text-decoration: none;
+
+}
+
+.log-in-btn:hover {
+    background-color: var(--nei-orange-hover);
+}
+
+.log-in-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.log-in .email-field, .log-in .password-field {
+    width: 100%;
+    border-bottom: solid 1px var(--white-4);
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    padding: 10px 10px 5px 10px;
+    margin: 10px 0px;
+    background-color: var(--white-2);
+  }
+
+  .log-in .name-field {
+    border-bottom: solid 1px var(--white-4);
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    padding: 10px 10px 5px 10px;
+    margin: 10px 0px;
+    background-color: var(--white-2);
+
+    width: 300px;
+  }
+
+/*Remember Me?*/
+
+.remember {
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+.remember input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border-radius: 3px;
+}
+
+.remember:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.remember input:checked ~ .checkmark {
+  background-color: var(--darkgrey-1);
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.remember input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.remember .checkmark:after {
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+    </style>
+</head>
+
+<body>
+
+    <div class="account-screen-create">
+        <div class="account-screen-logo"><img src="https://cdn.neiglobal.com/content/email/graphics/nei-logo-color-rgb-600x100.png"></div>
+        <div class="account-screen-exit"><a href="javascript:history.back()"><i class="fas fa-times"></i></a></div>
+        <div class="create-wrapper">
+            
+                <div class="create-form">
+                    <div>                    
+                    <h1>Create A Free Account <i style="font-size: 12px; font-weight: 300;">*These fields are required.</i></h1><p></p>
+                    <p><small>Already have an account? <a class="log-in-link" href="login.html">Sign In.</a></small></p>                    
+                    
+                    <br>
+                    </div>
+
+                    <div class="form">
+                        <h3>Your Information</h3>
+                        <hr>
+                        <div class="form-section">
+                            <div class="short-input">
+                                <br>
+                                <label><b>First Name*</b></label>
+                                <input class="input" type="text" id="fname" name="fname" placeholder="First Name" required> 
+                            </div>
+                            <div class="short-input">
+                                <br>
+                                <label><b>Middle Name</b></label>
+                                <input class="input" type="text" id="mname" name="mname" placeholder="Middle Name">
+                            </div>
+                            <div class="short-input">
+                                <br>
+                                <label><b>Last Name*</b></label>
+                                <input class="input" type="text" id="lname" name="lname" placeholder="Last Name" required>
+                            </div>
+                            <div class="short-select">
+                                <br>
+                                <label for="sufx"><b>Suffix</b></label>
+                                <select class="select" id="sufx" name="sufx">
+                                    <option value="" disabled selected> - </option>
+                                    <option value="i">I</option>
+                                    <option value="ii">II</option>
+                                    <option value="iii">III</option>
+                                    <option value="iv">IV</option>
+                                    <option value="jr">Jr.</option>
+                                    <option value="sr">Sr.</option>
+                                </select>                      
+                            </div>
+
+                            <div>
+                                <br>
+                                <label>
+                                    <b>Credentials*</b>
+                                    <i>Hold CTRL or Command key and then click to select multiple</i>
+                                </label>
+                                <div class="multiple-select-order-input">
+                                    <select class="select" size="6" multiple="multiple">
+                                        <option value="ABPP">ABPP</option>
+                                        <option value="ANP">ANP</option>
+                                        <option value="APN">APN</option>
+                                        <option value="APNP">APNP</option>
+                                        <option value="APRN">APRN</option>
+                                        <option value="ARNP">ARNP</option>
+                                        <option value="BA">BA</option>
+                                        <option value="BC">BC</option>
+                                        <option value="BCCS">BCCS</option>
+                                        <option value="BCDSW">BCDSW</option>
+                                        <option value="BCPP">BCPP</option>
+                                        <option value="BS">BS</option>
+                                        <option value="BScPharm">BScPharm</option>
+                                        <option value="BSN">BSN</option>
+                                        <option value="BSRN">BSRN</option>
+                                        <option value="CAC">CAC</option>
+                                        <option value="CCT">CCT</option>
+                                        <option value="CFNP">CFNP</option>
+                                        <option value="CISW">CISW</option>
+                                        <option value="CNC">CNC</option>
+                                        <option value="CNM">CNM</option>
+                                        <option value="CNP">CNP</option>
+                                        <option value="CNS">CNS</option>
+                                        <option value="COTA">COTA</option>
+                                        <option value="CPNP">CPNP</option>
+                                        <option value="CRNA">CRNA</option>
+                                        <option value="CRNP">CRNP</option>
+                                        <option value="CS">CS</option>
+                                        <option value="CSW">CSW</option>
+                                        <option value="DBA">DBA</option>
+                                        <option value="DDS">DDS</option>
+                                        <option value="DEA">DEA</option>
+                                        <option value="DMD">DMD</option>
+                                        <option value="DMIN">DMIN</option>
+                                        <option value="DNP">DNP</option>
+                                        <option value="DNSc">DNSc</option>
+                                        <option value="DO">DO</option>
+                                        <option value="DSc (Hon)">DSc (Hon)</option>
+                                        <option value="DSN">DSN</option>
+                                        <option value="EdD">EdD</option>
+                                        <option value="FACP">FACP</option>
+                                        <option value="FAPA">FAPA</option>
+                                        <option value="FAPM">FAPM</option>
+                                        <option value="FASCP">FASCP</option>
+                                        <option value="FHD">FHD</option>
+                                        <option value="FMHNP">FMHNP</option>
+                                        <option value="FNP">FNP</option>
+                                        <option value="FNP-C">FNP-C</option>
+                                        <option value="FRACGP">FRACGP</option>
+                                        <option value="FRCPC">FRCPC</option>
+                                        <option value="JD">JD</option>
+                                        <option value="LCSW">LCSW</option>
+                                        <option value="LFAPA">LFAPA</option>
+                                        <option value="LISW">LISW</option>
+                                        <option value="LMFT">LMFT</option>
+                                        <option value="LOTR">LOTR</option>
+                                        <option value="LP">LP</option>
+                                        <option value="LPC">LPC</option>
+                                        <option value="LPCC">LPCC</option>
+                                        <option value="LPN">LPN</option>
+                                        <option value="LSW">LSW</option>
+                                        <option value="MA">MA</option>
+                                        <option value="MBA">MBA</option>
+                                        <option value="MBBS">MBBS</option>
+                                        <option value="MBChB">MBChB</option>
+                                        <option value="MBS">MBS</option>
+                                        <option value="MD">MD</option>
+                                        <option value="MDCM">MDCM</option>
+                                        <option value="MED">MED</option>
+                                        <option value="MFTI">MFTI</option>
+                                        <option value="MHA">MHA</option>
+                                        <option value="MMed">MMed</option>
+                                        <option value="MN">MN</option>
+                                        <option value="MP">MP</option>
+                                        <option value="MPh">MPh</option>
+                                        <option value="MS">MS</option>
+                                        <option value="MSCP">MSCP</option>
+                                        <option value="MSN">MSN</option>
+                                        <option value="MSW">MSW</option>
+                                        <option value="NCC">NCC</option>
+                                        <option value="NCSP">NCSP</option>
+                                        <option value="ND">ND</option>
+                                        <option value=".">.</option>
+                                        <option value="NP">NP</option>
+                                        <option value="NPP">NPP</option>
+                                        <option value="PA">PA</option>
+                                        <option value="PA-C">PA-C</option>
+                                        <option value="PC">PC</option>
+                                        <option value="PharmD">PharmD</option>
+                                        <option value="PhD">PhD</option>
+                                        <option value="PMHCNS">PMHCNS</option>
+                                        <option value="PMHNP">PMHNP</option>
+                                        <option value="PNP">PNP</option>
+                                        <option value="PDS">PDS</option>
+                                        <option value="PsyD">PsyD</option>
+                                        <option value="RN">RN</option>
+                                        <option value="RNC">RNC</option>
+                                        <option value="RPh">RPh</option>
+                                        <option value="RXN">RXN</option>
+                                        <option value="RXNCS">RXNCS</option>
+                                        <option value="NoCredential">No Credential</option>
+                                        <option value="CredentialSuggestion">Credential Suggestion</option>
+                            
+                                    </select>
+
+                                    <input class="multiple-select-add-btn input" type="submit" value="&#xf061;" onclick="" />
+                                    
+                                    <select class="select" size="6" multiple="multiple"> 
+                                        <option></option>               
+                                    </select>   
+
+                                    <div class="multiple-select-order-btns">
+                                        <input class="input" type="submit" value="&#xf062;" onclick="" />
+                                        <input class="input" type="submit" value="&#xf063;" onclick="" />
+                                        <input class="input" type="submit" value="&#xf00d;" onclick="" />
+                                    </div>                                      
+                                </div>
+                            </div>
+
+                            <div class="short-input">
+                                <br>
+                                <label><b>Credential Suggestion</b></label>
+                                <input class="input" type="text" id="credsug" name="credsug" placeholder="Credential Suggestion" />
+                            </div>
+
+                            <div>
+                                <br>
+                                <label>
+                                    <b>Specialty*</b>
+                                    <i>Hold CTRL or Command key and then click to select multiple</i>
+                                </label>
+                                <div class="multiple-select-input">
+                                    <select class="select" size="5" multiple="multiple" >
+                                        <option value="CLNPSY">Clinical Psychology</option>
+                                        <option value="CLNPSYM">Clinical Psychology - Medical Psychology</option>
+                                        <option value="FP">Family Practice</option>
+                                        <option value="GP">General Practice</option>
+                                        <option value="IM">Internal Medicine</option>
+                                        <option value="N">Neurology</option>
+                                        <option value="NONE">None</option>
+                                        <option value="NUR">Nursing</option>
+                                        <option value="OS">Other Specialty</option>
+                                        <option value="P">Psychiatry</option>
+                                        <option value="CHP">Psychiatry - Child Psychiatry</option>
+                                        <option value="PFP">Psychiatry - Forensic Psychiatry</option>
+                                        <option value="PYG">Psychiatry - Geriatric Psychiatry</option>
+                            
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="short-input">
+                                <br>
+                                <label><b>National Provider Identifier Number (NPI)</b>
+                                <br>
+                                    <i>Don't know your NPI Number? <a href="#" style="color: unset;">Look it up here.</a></i></label>
+                                <input class="input" type="text" id="npi" name="npi" placeholder="NPI" />
+                            </div>
+
+                        </div>
+
+                        <br><br>
+                        <h3>Your Business Address</h3>
+                        <p><i>You will be able to add a shipping address later within My Account</i></p>
+                        <hr><br>
+                        <div class="form-section">
+            
+                            <div class="long-input"> 
+                                <label for="address"><b>Address* </b></label>
+                                <input class="input" type="text" id="address" name="address" placeholder="Address" required>     
+                                <br>         
+                            </div>
+                            <div class="short-input"> 
+                                <label for="city"><b>City* </b></label>
+                                <input class="input" type="text" id="city" name="city" placeholder="City" required>     
+                                <br>            
+                            </div>
+                            
+                            
+                            <div class="short-select">
+                                <label for="state"><b>State*</b></label>
+                                <select class="select" id="state" name="state" required>
+                                    <option value="" disabled selected> - </option>
+                                    <option value="AL">Alabama</option>
+                                    <option value="AK">Alaska</option>
+                                    <option value="AZ">Arizona</option>
+                                    <option value="AR">Arkansas</option>
+                                    <option value="AA">Armed Forces Americas</option>
+                                    <option value="AE">Armed Forces Europe, Middle East</option>
+                                    <option value="AP">Armed Forces Pacific</option>
+                                    <option value="CA">California</option>
+                                    <option value="CZ">Canal Zone</option>
+                                    <option value="CO">Colorado</option>
+                                    <option value="CT">Connecticut</option>
+                                    <option value="DE">Delaware</option>
+                                    <option value="DC">District of Columbia</option>
+                                    <option value="FL">Florida</option>
+                                    <option value="GA">Georgia</option>
+                                    <option value="GU">Guam</option>
+                                    <option value="HI">Hawaii</option>
+                                    <option value="ID">Idaho</option>
+                                    <option value="IL">Illinois</option>
+                                    <option value="IN">Indiana</option>
+                                    <option value="IA">Iowa</option>
+                                    <option value="KS">Kansas</option>
+                                    <option value="KY">Kentucky</option>
+                                    <option value="LA">Louisiana</option>
+                                    <option value="ME">Maine</option>
+                                    <option value="MD">Maryland</option>
+                                    <option value="MA">Massachusetts</option>
+                                    <option value="MI">Michigan</option>
+                                    <option value="MN">Minnesota</option>
+                                    <option value="MS">Mississippi</option>
+                                    <option value="MO">Missouri</option>
+                                    <option value="MT">Montana</option>
+                                    <option value="NE">Nebraska</option>
+                                    <option value="NV">Nevada</option>
+                                    <option value="NH">New Hampshire</option>
+                                    <option value="NJ">New Jersey</option>
+                                    <option value="NM">New Mexico</option>
+                                    <option value="NY">New York</option>
+                                    <option value="NC">North Carolina</option>
+                                    <option value="ND">North Dakota</option>
+                                    <option value="MP">Northern Mariana Islands</option>
+                                    <option value="OH">Ohio</option>
+                                    <option value="OK">Oklahoma</option>
+                                    <option value="OR">Oregon</option>
+                                    <option value="PI">Pacific Islands</option>
+                                    <option value="PA">Pennsylvania</option>
+                                    <option value="PR">Puerto Rico</option>
+                                    <option value="RI">Rhode Island</option>
+                                    <option value="SC">South Carolina</option>
+                                    <option value="SD">South Dakota</option>
+                                    <option value="TN">Tennessee</option>
+                                    <option value="TX">Texas</option>
+                                    <option value="TT">Trust Territories</option>
+                                    <option value="UT">Utah</option>
+                                    <option value="VT">Vermont</option>
+                                    <option value="VI">Virgin Islands</option>
+                                    <option value="VA">Virginia</option>
+                                    <option value="WA">Washington</option>
+                                    <option value="WV">West Virginia</option>
+                                    <option value="WI">Wisconsin</option>
+                                    <option value="WY">Wyoming</option>
+                                </select>  
+                                <br>                    
+                            </div>
+                            
+                            <div class="short-input"> 
+                                <label for="zip"><b>Zip Code* </b></label>
+                                <input class="input" type="text" id="zip" name="zip" placeholder="Zip Code" required>     
+                                <br>            
+                            </div>
+            
+                        </div>
+            
+            
+                        <br><br>
+                        <h3>How to Reach You</h3><hr><br>
+                        <div class="form-section">
+            
+                            <div class="short-input">
+                                <label for="number"><b>Phone Number</b></label>
+                                <input class="input" type="tel" id="number" name="number" placeholder="Phone Number">    
+                                <br>
+                            </div>
+
+                            <div class="short-input">
+                                <label for="email"><b>Email*</b></label>
+                                <input class="input" type="email" id="email" name="email" placeholder="Email Address" required>    
+                                <br><br>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Create Account</button>
+                        <button type="reset" class="reset-btn">Reset</button>
+                        <div id="form_submit_successful">Your form was successfully submitted. Thank you!</div>
+                    </div>    
+            
+                </div>
+        </div>
+        <div class="account-screen-footer"><p><small>Copyright © 2004-2022 Neuroscience Education Institute. All rights reserved.</small></p></div>
+    </div>
+</body>
+
+<script src="navigation.js">
+
+</script>
+
+</html>

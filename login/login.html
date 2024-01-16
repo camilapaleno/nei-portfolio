@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/4e837a30ce.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.neiglobal.com/content/include/css/style.css">
+
+    <title>Log In</title>
+    <style>
+/*Account Forms (Log In, Create Account)*/
+
+.account-screen h1,
+.account-screen h2,
+.account-screen h3,
+.account-screen h4,
+.account-screen p,
+.account-screen a,
+.account-screen span,
+.account-screen label {
+    font-family: Avenir LT Pro, Avenir, Nunito Sans, Arial, Helvetica, sans-serif;
+}
+
+.account-screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--white-3);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1004;
+}
+
+.account-screen-create h1,
+.account-screen-create h2,
+.account-screen-create h3,
+.account-screen-create h4,
+.account-screen-create p,
+.account-screen-create a,
+.account-screen-create span,
+.account-screen-create label {
+    font-family: Avenir LT Pro, Avenir, Nunito Sans, Arial, Helvetica, sans-serif;
+}
+
+.account-screen-create {
+    position: absolute;
+    background-color: var(--white-3);
+    width: 100%;
+    height: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1004;
+}
+
+.account-screen-create a {
+    color: var(--nei-orange-hover);
+}
+
+.account-screen-logo {
+    position: absolute;
+    top: 0;
+    padding: 30px;
+}
+.account-screen-logo img {
+    width: 240px;
+}
+
+.account-screen-exit {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 30px;
+}
+
+.account-screen-exit i {
+    font-size: 30px;
+    color: var(--white-4);
+}
+
+.account-screen-footer {
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    color: var(--darkgrey-1);
+    text-align: center;
+    font-size: 12px;
+}
+
+/*Log In Form*/
+
+.log-in-wrapper {
+    background-color: #fff;
+    z-index: 1002;
+    border-radius: 5px;
+    width: 450px;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.log-in {
+    display: flex;
+    width: 300px;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.log-in a {
+    color: var(--nei-orange-hover);
+}
+
+.log-in h2, .log-in p, .log-in span, .log-in label {
+    color: var(--darkgrey-3);
+}
+
+.log-in-header {
+    width: 100%;
+}
+
+
+
+.log-in-btn {
+  width: 100%;
+  text-align: center;
+}
+
+.log-in-btn{
+  color: #FFF;
+  font-family: Avenir LT Pro, Avenir, Nunito Sans, Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  display: block;
+  width: 100%;
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--nei-orange);
+  text-decoration: none;
+
+}
+
+.log-in-btn:hover {
+    background-color: var(--nei-orange-hover);
+}
+
+.log-in-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.log-in .email-field, .log-in .password-field {
+    width: 100%;
+    border-bottom: solid 1px var(--white-4);
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    padding: 10px 10px 5px 10px;
+    margin: 10px 0px;
+    background-color: var(--white-2);
+  }
+
+  .log-in .name-field {
+    border-bottom: solid 1px var(--white-4);
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    padding: 10px 10px 5px 10px;
+    margin: 10px 0px;
+    background-color: var(--white-2);
+
+    width: 300px;
+  }
+
+/*Remember Me?*/
+
+.remember {
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+.remember input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border-radius: 3px;
+}
+
+.remember:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.remember input:checked ~ .checkmark {
+  background-color: var(--darkgrey-1);
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.remember input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.remember .checkmark:after {
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+    </style>
+
+</head>
+
+<body>
+    <div class="account-screen">
+      <div class="account-screen-logo"><img src="https://cdn.neiglobal.com/content/email/graphics/nei-logo-color-rgb-600x100.png"></div>
+      <div class="account-screen-exit"><a href="#"><i class="fas fa-times"></i></a></div>
+        <div class="log-in-wrapper">
+            <div class="log-in">
+                <div class="log-in-header">
+                    <h2>Log In</h2>
+                    <p><small>New user? <a class="log-in-link" href="create.html">Create a free guest account.</a></small></p>                    
+                </div>
+                <form>
+                    <div class="log-in-form">
+                      <label for="email"><b>Email</b></label>
+                      <br>
+                      <input class="email-field" type="text" placeholder="Enter Email" name="email" required>
+                      <br><br>
+                      <label for="psw"><b>Password</b></label>
+                      <br>
+                      <input class="password-field" type="password" placeholder="Enter Password" name="psw" required>
+                      <br><br><br>
+                      <div class="log-in-btn">
+                      Log In
+                      </div>
+                      <br>
+                      <div class="log-in-footer">
+<!--                         <label class="remember"><small>Remember Me</small>
+                          <input type="checkbox" checked="checked">
+                          <span class="checkmark"></span>
+                        </label> -->
+                        <small class="psw"><a href="https://www.neiglobal.com/Default.aspx?tabname=PasswordRequest">Forgot password?</a></small>
+                      </div>
+                    </div>
+                  </form>
+            </div>
+        </div>
+        <div class="account-screen-footer"><p><small>Copyright © 2004-2022 Neuroscience Education Institute. All rights reserved.</small></p></div>
+    </div>
+</body>
+
+</html>
